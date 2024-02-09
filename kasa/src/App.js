@@ -1,7 +1,6 @@
 // App.js
 import React from 'react';
-import AppRouter from './AppRouter';
-import './App.css'; // Import des styles CSS globaux
+import AppRouter from './routeur/AppRouter'; // Import des styles CSS globaux
 
 const App = () => {
   return (
