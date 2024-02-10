@@ -1,5 +1,3 @@
-/* Autres styles pour la page Home */
-
 .background {
     position: relative;
     width: calc(100% - 170px); // Ajustez la largeur en fonction de la largeur du header et de la marge
@@ -18,6 +16,8 @@
     border-radius: 25px;
 }
 
+
+
 .content {
     position: absolute;
     top: 65%; /* Ajustez cette valeur pour déplacer le texte verticalement */
@@ -27,6 +27,7 @@
     color: white;
 }
 
+
 .content h2 {
     font-family: Montserrat;
     font-size: 4em;
@@ -35,3 +36,4 @@
     letter-spacing: 0em;
     margin: 0;
 }
+

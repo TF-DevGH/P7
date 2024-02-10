@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Autres styles pour la page Home */
 .background {
   position: relative;
   width: calc(100% - 170px);
@@ -36,4 +35,4 @@
   margin: 0;
 }
 
-/*# sourceMappingURL=Home.css.map */
+/*# sourceMappingURL=Banner.css.map */

@@ -1,0 +1,53 @@
+// Card.scss
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Pour aligner les cartes en deux lignes */
+    margin: 0px; /* Pour compenser la marge négative ajoutée par les cartes */
+}
+
+.thumb {
+    position: relative;
+    width: calc(33.33% - 20px); /* Ajustez la largeur des cartes en fonction du nombre de cartes par ligne */
+    height: 0;
+    padding-top: calc(33.33% - 20px); /* Hauteur fixe pour chaque carte, pour obtenir un carré */
+    margin-bottom: 20px; /* Espace entre les lignes */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0; /* Réinitialisation des marges */
+}
+
+.thumb-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 200%);
+    border-radius: 1em;
+}
+
+.thumb-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;    
+    letter-spacing: 0em;
+    margin: 0; /* Réinitialisation des marges */
+}
+
+.thumb-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0; /* Réinitialisation des marges */
+}
