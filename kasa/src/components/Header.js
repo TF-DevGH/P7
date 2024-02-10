@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <nav className="menu">
           <h1 className="menu-item accueil">Accueil</h1>
-          <h1 className="menu-item apropos">À propos</h1>
+          <h1 className="menu-item apropos">A Propos</h1>
         </nav>
       </div>
     </header>

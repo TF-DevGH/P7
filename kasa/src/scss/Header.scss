@@ -1,22 +1,21 @@
 * {
-    margin: 0; /* Remise à zéro des marges pour tous les éléments */
-    box-sizing: border-box; /* Inclure les paddings et les bordures dans la largeur et la hauteur */
+    margin: 0;
+    box-sizing: border-box;
 }
 
 header {
     position: relative;
     width: 100%;
     height: auto;
-    padding-top:68px;
-    padding-left:100px;
+    padding-top: 68px;
+    padding-left: 100px;
 }
+
 nav {
     width: auto;
-    padding-top: 34px; /* Équivalent à top: 17px */
-    padding-right: 10em;
+    padding-top: 34px;
+    padding-right: 10em; /* Changer le padding-right selon vos besoins */
 }
-
-
 
 .container {
     display: flex;
@@ -25,7 +24,7 @@ nav {
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .logo img {
@@ -55,6 +54,10 @@ nav {
     padding-top: 17px;
     position: relative;
     text-decoration: none;
+}
+
+.menu-item + .menu-item {
+    margin-left: 1em; /* Ajout d'un espace entre les éléments */
 }
 
 .menu-item::before,
