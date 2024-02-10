@@ -1,1 +1,72 @@
-h1 {color:red;}
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: relative;
+    width: 1240px; // Taille spécifique en fonction de Figma
+    height: 68px; // Taille spécifique en fonction de Figma
+    top: 40px; // Positionnement en fonction de Figma
+    left: 100px; // Positionnement en fonction de Figma
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .menu {
+    display: flex;
+    position: absolute;
+    top: 17px; // Positionnement en fonction de Figma
+    left: 931px; // Positionnement en fonction de Figma
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    color: #ff6060;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 12px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .menu-item + .menu-item {
+    margin-left: 12px;
+  }
+  
+  .menu-item::before,
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6060;
+    transition: width 0.5s ease;
+  }
+  
+  .menu-item::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .menu-item::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .menu-item:hover::before,
+  .menu-item:hover::after {
+    width: calc(100% - 24px);
+  }
+  

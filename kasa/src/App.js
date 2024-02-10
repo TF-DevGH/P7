@@ -1,21 +1,19 @@
 // App.js
 import React from 'react';
-import AppRouter from './routeur/AppRouter'; // Import des styles CSS globaux
+import AppRouter from './routeur/AppRouter';
+import Header from './components/Header'; // Importer le composant Header
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <div className="app">
-      <header>
-        {/* Ajoutez ici le contenu de votre en-tête */}
-        <h1>Mon Application React</h1>
-      </header>
+      {/* Remplacez le header par le composant Header */}
+      <Header />
       <main>
-        {/* Intégrez le composant AppRouter pour gérer le routage */}
         <AppRouter />
       </main>
       <footer>
-        {/* Ajoutez ici le contenu de votre pied de page */}
-        <p>© 2024 Mon Application React. Tous droits réservés.</p>
+        <Footer />
       </footer>
     </div>
   );
