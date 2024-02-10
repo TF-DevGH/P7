@@ -7,12 +7,12 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="logo">
-          <img src={LogoSVG} alt="Kasa Logo" />
+          <img src={LogoSVG} alt="Kasa Logo" width="210.32px" height="68px" />
         </div>
-        <div className="menu">
-          <h2 className="menu-item">Accueil</h2>
-          <h2 className="menu-item">À propos</h2>
-        </div>
+        <nav className="menu">
+          <h1 className="menu-item accueil">Accueil</h1>
+          <h1 className="menu-item apropos">À propos</h1>
+        </nav>
       </div>
     </header>
   );

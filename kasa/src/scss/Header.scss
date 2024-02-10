@@ -1,51 +1,64 @@
+* {
+    margin: 0; /* Remise à zéro des marges pour tous les éléments */
+    box-sizing: border-box; /* Inclure les paddings et les bordures dans la largeur et la hauteur */
+}
+
 header {
-    background-color: #f2f2f2;
-    padding: 20px;
     position: relative;
-    width: 1240px; // Taille spécifique en fonction de Figma
-    height: 68px; // Taille spécifique en fonction de Figma
-    top: 40px; // Positionnement en fonction de Figma
-    left: 100px; // Positionnement en fonction de Figma
-  }
-  
-  .container {
+    width: 100%;
+    height: auto;
+    padding-top:68px;
+    padding-left:100px;
+}
+nav {
+    width: auto;
+    padding-top: 34px; /* Équivalent à top: 17px */
+    padding-right: 10em;
+}
+
+
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo {
+}
+
+.logo {
     margin-right: 20px;
-  }
-  
-  .logo img {
-    width: 100px;
-    height: auto;
-  }
-  
-  .menu {
+}
+
+.logo img {
+    width: 210.32px;
+    height: 68px;
+}
+
+.menu {
     display: flex;
     position: absolute;
-    top: 17px; // Positionnement en fonction de Figma
-    left: 931px; // Positionnement en fonction de Figma
-  }
-  
-  .menu-item {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.menu-item {
     cursor: pointer;
-    color: #ff6060;
-    font-size: 24px;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
     margin: 0;
     padding: 0 12px;
+    padding-top: 17px;
     position: relative;
     text-decoration: none;
-  }
-  
-  .menu-item + .menu-item {
-    margin-left: 12px;
-  }
-  
-  .menu-item::before,
-  .menu-item::after {
+}
+
+.menu-item::before,
+.menu-item::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -53,20 +66,19 @@ header {
     height: 2px;
     background-color: #ff6060;
     transition: width 0.5s ease;
-  }
-  
-  .menu-item::before {
+}
+
+.menu-item::before {
     left: 50%;
     transform: translateX(-50%);
-  }
-  
-  .menu-item::after {
+}
+
+.menu-item::after {
     right: 50%;
     transform: translateX(50%);
-  }
-  
-  .menu-item:hover::before,
-  .menu-item:hover::after {
+}
+
+.menu-item:hover::before,
+.menu-item:hover::after {
     width: calc(100% - 24px);
-  }
-  
+}
