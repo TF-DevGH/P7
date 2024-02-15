@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .background {
     position: relative;
     width: calc(100% - 170px); // Ajustez la largeur en fonction de la largeur du header et de la marge
@@ -29,7 +36,7 @@
 
 
 .content h2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat Light', sans-serif;
     font-size: 4em;
     font-weight: 500;
     line-height: 68px;

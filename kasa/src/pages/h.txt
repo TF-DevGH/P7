@@ -1,0 +1,40 @@
+// Home.js
+
+import React from 'react';
+import Banner from '../components/Banner';
+import Card from '../components/Card';
+import '../scss/Home.scss';
+import '../scss/Banner.scss';
+import BackgroundSVG from '../assets/backgroundHome.svg';
+import {logementList} from '../data/logementList'
+
+const Home = () => {
+  return (
+    <div>
+      <Banner imageUrl={BackgroundSVG} text="Chez vous, partout et ailleurs" />
+      <div className="gallery">
+        {/* Première ligne de cartes */}
+        <div className="gallery-row">
+          {/* Utiliser les vraies data de logementList.js, itérer sur logementList au lieu d'avoir 6x "card title ..." / N'avoir que le .map & du forEach pour afficher toute la data / Utiliser le .map pour itérer. / Comprendre comment fonctionne le map. /  */}
+        {logementList.forEach((Logement) => (
+                    <Card 
+                        title={Logement.title}
+                    />
+                    ))
+                }
+          <Card title={logementList[1].title} />
+          <Card title="Titre de la location 2" />
+          <Card title="Titre de la location 3" />
+        </div>
+        {/* Deuxième ligne de cartes */}
+        <div className="gallery-row">
+        <Card title={logementList[4].title} />
+          <Card title="Titre de la location 5" />
+          <Card title="Titre de la location 6" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

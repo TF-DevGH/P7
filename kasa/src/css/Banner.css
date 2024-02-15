@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .background {
   position: relative;
   width: calc(100% - 170px);
@@ -27,7 +33,7 @@
 }
 
 .content h2 {
-  font-family: Montserrat;
+  font-family: "Montserrat Light", sans-serif;
   font-size: 4em;
   font-weight: 500;
   line-height: 68px;

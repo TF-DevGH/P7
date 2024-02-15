@@ -3,13 +3,10 @@
 import React from 'react';
 import '../scss/Card.scss'; // Import des styles SCSS pour la carte
 
-const Card = () => {
+const Card = ({ title }) => {
   return (
     <div className="thumb">
-      <div className="thumb-rectangle"></div>
-      <div className="thumb-text">Titre de la location</div>
-      <div className="thumb-image"></div>
-      
+      <div className="thumb-text">{title}</div>
     </div>
   );
 };

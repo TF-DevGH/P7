@@ -2,7 +2,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 header {
     position: relative;
     width: 100%;
@@ -43,7 +48,7 @@ nav {
 .menu-item {
     cursor: pointer;
     color: #FF6060;
-    font-family: Montserrat;
+    font-family: 'Montserrat Light', sans-serif;
     font-size: 2em;
     font-weight: 500;
     line-height: 34px;
