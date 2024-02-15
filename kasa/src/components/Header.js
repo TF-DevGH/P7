@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <div className="logo">
+        <div className="header-logo"> {/* Changez la classe en header-logo */}
           <img src={LogoSVG} alt="Kasa Logo" width="210.32px" height="68px" />
         </div>
         <nav className="menu">

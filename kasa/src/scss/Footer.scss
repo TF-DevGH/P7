@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    width: 100%;/* Ajustez la hauteur automatiquement en fonction du contenu */
+    height: 20em;
+    position: relative;
+    background-color: #000000;
+  }
+
+  .footer-logo {
+    width: 122px; /* Largeur du logo */
+    height: 40px; /* Hauteur du logo */
+    position: absolute; /* Position absolue pour le positionnement */
+    top: 50%; /* Position verticale au centre */
+    left: 50%; /* Position horizontale au centre */
+    transform: translate(-50%, -50%); /* Centrage du logo */
+    padding-bottom: 6em;
+  }
+  
+  .footer-logo svg {
+    width: 100%; /* Assurez-vous que le logo SVG prend toute la largeur disponible */
+    height: 100%; /* Assurez-vous que le logo SVG prend toute la hauteur disponible */
+  }
+  
+  
+  .logo {
+    width: 122px;
+    height: 40px; /* Ajustez la hauteur en fonction de la taille normale du logo */
+    position: absolute;
+    top: 50%; /* Ajustez la position verticale pour centrer le logo */
+    left: 50%; /* Centrez horizontalement */
+    transform: translate(-50%, -50%); /* Centrez le logo */
+  }
+  
+  .text {
+    padding-top: 0.5em;
+    width: 35em;
+    height: 46px;
+    font-family: Montserrat;
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: absolute;
+    top: calc(50% + 20px); /* Ajustez la position verticale pour centrer le texte sous le logo */
+    left: 50%; /* Centrez horizontalement */
+    transform: translateX(-50%);
+    color: white;
+  }
+  

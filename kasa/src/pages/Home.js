@@ -1,6 +1,9 @@
+// Par exemple dans votre composant Home.js
+
 import React from 'react';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
+//import Blank from '../components/Blank'; // Importez le composant Blank
 import '../scss/Home.scss';
 import '../scss/Banner.scss';
 import BackgroundSVG from '../assets/backgroundHome.svg';
@@ -29,6 +32,8 @@ const Home = () => {
             ))}
           </div>
         ))}
+        {/* Utilisez le composant Blank pour créer de l'espace */}
+        {/*<Blank />*/}
       </div>
     </div>
   );

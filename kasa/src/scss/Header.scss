@@ -48,21 +48,23 @@ nav {
 .menu-item {
     cursor: pointer;
     color: #FF6060;
-    font-family: 'Montserrat Light', sans-serif;
+    font-family: "Montserrat Light", sans-serif;
     font-size: 2em;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0em;
     text-align: right;
     margin: 0;
-    padding: 0 12px;
-    padding-top: 17px;
+    padding: 0 0px;
+    padding-top: 16px;
+    padding-right: 0em;
     position: relative;
     text-decoration: none;
 }
 
 .menu-item + .menu-item {
-    margin-left: 1em; /* Ajout d'un espace entre les éléments */
+    margin-left: 6em; /* Ajout d'un espace entre les éléments */
+    margin-right: 5em;
 }
 
 .menu-item::before,
@@ -88,5 +90,5 @@ nav {
 
 .menu-item:hover::before,
 .menu-item:hover::after {
-    width: calc(100% - 24px);
+    width: calc(100% - 0px);
 }
