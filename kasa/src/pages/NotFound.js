@@ -11,7 +11,7 @@ const NotFound = () => {
       <div className="errorMessage-container">
         <p className="Text errorMessage">Oups! La page que vous demandez n'existe pas.</p> {/* Utilisation de la classe Text pour le style du texte */}
       </div>
-      <div className="returnText-container">
+      <div className="returnText-container animation"> {/* Ajoutez la classe "animation" pour activer l'animation */}
         <p className="Text returnText">Retourner sur la page d’accueil</p> {/* Utilisation de la classe Text pour le style du texte */}
       </div>
     </div>

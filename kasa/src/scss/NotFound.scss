@@ -1,6 +1,5 @@
-// NotFound.scss
 @font-face {
-    font-family: 'Montserrat Light'; /* Nom de la police d'écriture utilisé dans @font-face */
+    font-family: 'Montserrat Light';
     src: url('../fonts/Montserrat-Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -16,16 +15,16 @@
     align-items: center;
     padding-left: 66em;
 }
-  
+
 .Element404 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8em;
+    padding-top: 4em;
 }
-  
+
 .Text {
-    font-family: 'Montserrat Light'; /* Utilisation de la police d'écriture importée */
+    font-family: 'Montserrat Light';
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -35,10 +34,10 @@
 }
 
 .notFoundText {
-    font-size: 30em;
+    font-size: 28em;
     font-weight: 700;
     line-height: 434px;
-    padding-bottom: 38px;
+    padding-bottom: 0.15em;
 }
 
 .errorMessage-container,
@@ -52,13 +51,43 @@
 
 .errorMessage {
     margin-top: 0px;
-    font-size: 4em;
-    width: 20em;
+    font-size: 3em;
+    width: 30em;
     padding-bottom: 4em;
 }
 
 .returnText {
     margin-top: 50px;
-    font-size: 50px;
-    width: 30em;
+    font-size: 2em;
+    width: 15.3em;
+    margin-bottom: 3em;
+    padding-bottom: 2px;
+    position: relative; /* Ajout de la position relative */
+    cursor: pointer;
+}
+
+.returnText:hover::before,
+.returnText:hover::after {
+    width: 100%; /* Remplacez 100% par la largeur souhaitée */
+}
+
+.returnText::before,
+.returnText::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6060;
+    transition: width 0.6s ease-in-out;
+}
+
+.returnText::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.returnText::after {
+    right: 50%;
+    transform: translateX(50%);
 }
