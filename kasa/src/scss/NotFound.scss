@@ -1,0 +1,64 @@
+// NotFound.scss
+@font-face {
+    font-family: 'Montserrat Light'; /* Nom de la police d'écriture utilisé dans @font-face */
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.D404 {
+    width: 1500px;
+    height: 1024px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 66em;
+}
+  
+.Element404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8em;
+}
+  
+.Text {
+    font-family: 'Montserrat Light'; /* Utilisation de la police d'écriture importée */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF6060;
+}
+
+.notFoundText {
+    font-size: 30em;
+    font-weight: 700;
+    line-height: 434px;
+    padding-bottom: 38px;
+}
+
+.errorMessage-container,
+.returnText-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+
+.errorMessage {
+    margin-top: 0px;
+    font-size: 4em;
+    width: 20em;
+    padding-bottom: 4em;
+}
+
+.returnText {
+    margin-top: 50px;
+    font-size: 50px;
+    width: 30em;
+}
