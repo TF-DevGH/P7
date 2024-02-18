@@ -8,12 +8,21 @@
     font-weight: normal;
     font-style: normal;
 }
+* {
+    font-family: 'Montserrat Light', sans-serif;
+}
 header {
     position: relative;
     width: 100%;
     height: auto;
-    padding-top: 68px;
+    padding-top: 48px;
     padding-left: 100px;
+}
+div.header-logo{
+    width: 210.32px;
+    height: 68px;
+    top: 40px;
+    left: 100px;
 }
 
 nav {
@@ -61,10 +70,23 @@ nav {
     position: relative;
     text-decoration: none;
 }
+.menu-item accueil{
+width: 136px;
+height: 34px;
+top: 57px;
+left: 1031px;
+}
+
+.menu-item apropos{
+    width: 116px;
+    height: 34px;
+    top: 57px;
+    left: 1224px;
+}
 
 .menu-item + .menu-item {
-    margin-left: 6em; /* Ajout d'un espace entre les éléments */
-    margin-right: 5em;
+    margin-left: 6em;
+    margin-right: 0em;
 }
 
 .menu-item::before,

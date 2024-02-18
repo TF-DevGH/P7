@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  font-family: "Montserrat Light", sans-serif;
+}
+
 .background {
   position: relative;
   width: calc(100% - 170px);

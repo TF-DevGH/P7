@@ -1,4 +1,18 @@
 /* Autres styles pour la page Home */
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.img_logo_footer{
+    width:1em;
+}
 
 .background {
     position: relative;
@@ -27,16 +41,9 @@
     color: white;
 }
 
-.content h2 {
-    font-family: Montserrat;
-    font-size: 4em;
-    font-weight: 500;
-    line-height: 68px;
-    letter-spacing: 0em;
-    margin: 0;
-}
 
-.gallery{
+
+.gallery {
     margin: 6em;
     margin-top: 6em;
     margin-right: 170px;

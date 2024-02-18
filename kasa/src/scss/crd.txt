@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.gallery {
+    margin: 5em 6em; /* Ajout de marges */
+    position: relative; /* Position relative pour le positionnement du pseudo-élément */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    background-color: #f5f5f5; /* Couleur de fond */
+    border-radius: 2em; /* Ajout du border-radius */
+    overflow: hidden; /* Masquer le contenu qui dépasse */
+}
+
+.gallery:before {
+    content: ''; /* Utilisé pour créer une pseudo-élément pour le dégradé */
+    position: absolute;
+    top: -10%; /* Déplacer le pseudo-élément vers le haut */
+    left: 0;
+    width: 100%;
+    height: 120%; /* Ajustement de la hauteur du pseudo-élément */
+    background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: -1; /* Assurez-vous que le pseudo-élément est en arrière-plan */
+}
+
+.thumb {
+    width: calc((100% - 200px) / 3);
+    height: calc((100vw - 200px) / 3);
+    margin: 0 40px 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.thumb-text {
+    color: white;
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 6em;
+    font-weight: 300; /* Poids de la police : light */
+    text-align: left; /* Aligner le texte à gauche */
+    position: absolute; /* Positionner le texte de manière absolue */
+    bottom: 110px; /* Espacement du texte depuis le bas */
+    left: 20px; /* Espacement du texte depuis la gauche */
+    z-index: 1; /* Assurez-vous que le texte est au-dessus du fond */
+}
+
+.thumb:before {
+    content: ''; /* Utilisé pour créer une pseudo-élément pour le dégradé */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #FF6060 0%, rgba(110, 0, 0, 0.8) 100%);
+    border-radius: 1em;
+    z-index: 0; /* Assurez-vous que le dégradé est en arrière-plan */
+}

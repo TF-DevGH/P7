@@ -1,0 +1,39 @@
+.background {
+  position: relative;
+  width: calc(100% - 160px);
+  height: 40em;
+  border-radius: 25px;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-top: 60px;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 389px;
+  height: 17em;
+  position: relative;
+  background-color: #000000;
+}
+
+.dropdownlarge {
+  position: absolute;
+  width: 1023px;
+  height: auto;
+  bottom: 30em;
+  background: #FFF;
+}
+
+.Rectangle4 {
+  width: 1100px;
+  padding-top: 4em;
+  margin-left: 20em;
+  padding-bottom: 1em;
+  margin-bottom: 13em;
+  border-radius: 5px;
+  background: #FF6060;
+  cursor: pointer;
+  position: relative;
+}
+
+/*# sourceMappingURL=About.css.map */

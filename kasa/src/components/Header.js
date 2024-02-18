@@ -3,6 +3,16 @@ import '../scss/Header.scss'; // Importer les styles SCSS pour le Header
 import LogoSVG from '../assets/logoKasa.svg'; // Importer le fichier SVG du logo
 
 const Header = () => {
+  // Fonction pour rediriger vers /home
+  const goToHome = () => {
+    window.location.href = '/home';
+  };
+
+  // Fonction pour rediriger vers /about
+  const goToAbout = () => {
+    window.location.href = '/about';
+  };
+
   return (
     <header>
       <div className="container">
@@ -10,8 +20,9 @@ const Header = () => {
           <img src={LogoSVG} alt="Kasa Logo" width="210.32px" height="68px" />
         </div>
         <nav className="menu">
-          <h1 className="menu-item accueil">Accueil</h1>
-          <h1 className="menu-item apropos">A Propos</h1>
+          {/* Utiliser les fonctions pour effectuer la navigation */}
+          <h1 className="menu-item accueil" onClick={goToHome}>Accueil</h1>
+          <h1 className="menu-item apropos" onClick={goToAbout}>A Propos</h1>
         </nav>
       </div>
     </header>
