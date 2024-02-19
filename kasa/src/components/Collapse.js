@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../scss/DropdownMenu.scss';
+import '../scss/Collapse.scss';
 import ddmenuclosed from '../assets/ddmenuclosed.svg'; // Importez le fichier SVG
 import { logementList } from '../data/logementList'; // Importez logementList.js
 
-const DropdownMenu = ({ id }) => {
+const Collapse = ({ id }) => {
   // Recherchez l'élément correspondant dans la liste des logements en utilisant l'identifiant
   const logement = logementList.find(item => item.identifiant === id);
 
@@ -43,4 +43,4 @@ const DropdownMenu = ({ id }) => {
   );
 };
 
-export default DropdownMenu;
+export default Collapse;
