@@ -1,0 +1,99 @@
+// FicheLogement.scss
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Montserrat Light', sans-serif;
+}
+h1.titre1 {
+    color: #FF6060;
+    font-size: 56px;
+}
+
+h2.titre2 {
+    font-size: 2em;
+    padding-top: 1em;
+    color: #FF6060;
+}
+.content-wrapper {
+    .tag-zone {
+        padding-top: 2em;
+    }
+
+    .title-wrapper {
+        padding-top: 1em;
+        padding-left: 7em;
+    }
+
+    .caroussel {
+        .image-wrapper {
+            padding-top: 0em;
+            object-fit: cover;
+            height: 144%;
+
+            .caroussel .image-wrapper img {
+                height: 230%;
+                object-fit: cover;
+            }
+            img.img_1 {
+                width: 100%;
+            }
+
+            .button-left,
+            .button-right {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+
+                img {
+                    /* styles pour les boutons gauche et droit */
+                }
+            }
+
+            .button-left {
+                left: 0;
+            }
+
+            .button-right {
+                right: 0;
+            }
+
+            .image-number {
+                position: absolute;
+                padding-bottom: 4em;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 2em;
+            }
+        }
+    }
+    .tag-header {
+        width: 13em;
+        padding: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #FF6060;
+        border-radius: 2em;
+        height: 25px;
+    }
+    .tag-zone {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag-container {
+        position: relative;
+        z-index: 2;
+        padding-right: 1em;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+}

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Home from '../pages/Home';
 import About from '../pages/About';
 import NotFound from '../pages/NotFound';
+import FicheLogement from '../pages/FicheLogement';
 
 const AppRouter = () => {
   return (
@@ -14,7 +15,9 @@ const AppRouter = () => {
         <Route path="/" element={<Navigate to="/home" />} /> {/* Redirige l'URL racine vers /home */}
         <Route path="/home" element={<Home />} /> {/* Route pour la page d'accueil */}
         <Route path="/about" element={<About />} /> {/* Route pour la page "À propos" */}
+        <Route path="/FicheLogement" element={<FicheLogement />} /> {/* Route pour la page d'accueil */}
         <Route path="*" element={<NotFound />} /> {/* Route pour la page 404 */}
+        
       </Routes>
     </Router>
   );

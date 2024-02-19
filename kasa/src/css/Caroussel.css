@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Montserrat Light", sans-serif;
+}
+
+.caroussel {
+  width: 100%;
+  padding: 0em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.caroussel .content-wrapper {
+  width: 100%;
+}
+.caroussel .image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 92%;
+  height: 415px;
+  margin: 0 auto;
+  padding-left: 0em;
+  padding-right: 3.5em;
+}
+.caroussel .image-wrapper .image-number {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+}
+.caroussel .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.caroussel .image-wrapper .button-left,
+.caroussel .image-wrapper .button-right {
+  padding-left: 1em;
+  padding-right: 5em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+.caroussel .image-wrapper .button-left img,
+.caroussel .image-wrapper .button-right img {
+  /* styles pour les boutons gauche et droit */
+}
+.caroussel .image-wrapper .button-left {
+  left: 0;
+}
+.caroussel .image-wrapper .button-right {
+  right: 0;
+}
+
+/*# sourceMappingURL=Caroussel.css.map */

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    font-family: 'Montserrat Light', sans-serif;
+  }
+.caroussel {
+    width: 100%;
+    padding: 0em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 92%;
+        height: 415px;
+        margin: 0 auto; // Pour centrer horizontalement le conteneur
+        padding-left: 0em;
+        padding-right: 3.5em; // Ajout de padding à droite
+
+        .image-number {
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+        }
+
+
+
+        img {
+            width: 100%; // Largeur de l'image à 100% du conteneur
+            height: 100%; // Hauteur de l'image à 100% du conteneur
+            object-fit: cover; // Ajuste la taille de l'image pour couvrir le conteneur sans déformer ses proportions
+        }
+
+        .button-left,
+        .button-right {
+            padding-left: 1em; // Ajout de padding au bouton droit
+            padding-right: 5em; // Ajout de padding au bouton gauche
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1;
+
+            img {
+                /* styles pour les boutons gauche et droit */
+            }
+        }
+
+        .button-left {
+            left: 0;
+        }
+
+        .button-right {
+            right: 0;
+        }
+    }
+}

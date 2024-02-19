@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.tag-title {
+    font-size: 1.5em;
+}
+
+.tag-container {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tag-container.custom-tag-container {
+    width: 82.50%;
+    right: 0;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3em;
+    overflow: hidden;
+    height: auto; // Permet au conteneur de s'ajuster dynamiquement en hauteur
+}
+
+.tag-header {
+    width: 13em;
+    padding: 2em;
+    display: flex;
+    height: 47px;
+    align-items: center;
+    justify-content: space-between;
+    background: #FF6060;
+    border-radius: 5px;
+    height: 25px;
+    top: 670px;
+    left: 100px;
+}
+
+.tag-header .menu-title {
+    color: #f5f5f5;
+}
+
+.tag-content {
+    padding: 1em;
+    overflow: hidden; // Assurez-vous que le contenu déborde correctement
+}
+
+.tag-container .tag-title {
+    padding-left: 2em;
+    top: 3px;
+    left: 40px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block; // Ajuste la largeur du conteneur au contenu
+    /* Retirez la propriété width */
+}

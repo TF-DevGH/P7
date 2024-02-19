@@ -1,0 +1,51 @@
+.fiche-logement {
+  text-align: center;
+}
+
+.content-wrapper {
+  margin-top: 20px;
+}
+
+.image-with-text {
+  position: relative;
+}
+
+.image-with-text img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+}
+
+.button-left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.button-right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.title-wrapper {
+  margin-top: 20px;
+}
+
+.collapse-wrapper {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=FicheLogement.css.map */
