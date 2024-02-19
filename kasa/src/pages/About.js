@@ -1,8 +1,5 @@
-// Par exemple dans votre composant Home.js
-
 import React from 'react';
 import Banner from '../components/Banner';
-//import Blank from '../components/Blank'; // Importez le composant Blank
 import '../scss/Home.scss';
 import '../scss/Banner.scss';
 import BackgroundSVG from '../assets/imgAbout.svg';
@@ -13,10 +10,13 @@ const About = () => {
     <div>
       <Banner imageUrl={BackgroundSVG}/>
       <div>
-    <DropdownMenu /> {/* Mettez à jour l'utilisation du composant */}
+        {/* Passez les identifiants des logements comme props à DropdownMenu */}
+        <DropdownMenu id="cb2f9222" />
+        <DropdownMenu id="d60ca600" />
+        <DropdownMenu id="bc6f7112" />
+        <DropdownMenu id="1e181317" />
+      </div>
     </div>
-    </div>
-
   );
 };
 
