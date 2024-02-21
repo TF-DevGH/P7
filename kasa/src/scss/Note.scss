@@ -1,24 +1,21 @@
 // Note.scss
-// Note.scss
 .star-container {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Alignez les étoiles à droite */
     width: auto; /* Ajustez la largeur automatiquement en fonction du contenu */
     height: auto; /* Ajustez la hauteur automatiquement en fonction du contenu */
+    padding-right: 10em;
 }
 
-
 .star_full{
-    width: 24.75px;
-    height: 24px;
-    /* top: 658px;  Commentez ces lignes */
-    /* left: 1150px;  Commentez ces lignes */
+    width: 99px; // 24.75px * 4
+    height: 96px; // 24px * 4
+    margin-left: 16px; /* Ajoutez une marge à gauche pour séparer les étoiles */
 }
 
 .star_empty{
-    width: 24.75px;
-    height: 24px;
-    /* top: 658px;  Commentez ces lignes */
-    /* left: 1150px;  Commentez ces lignes */
+    width: 99px; // 24.75px * 4
+    height: 96px; // 24px * 4
+    margin-left: 16px; /* Ajoutez une marge à gauche pour séparer les étoiles */
 }

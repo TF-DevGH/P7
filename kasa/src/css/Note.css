@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.star-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alignez les étoiles à droite */
+  width: auto; /* Ajustez la largeur automatiquement en fonction du contenu */
+  height: auto; /* Ajustez la hauteur automatiquement en fonction du contenu */
+  padding-right: 10em;
+}
+
+.star_full {
+  width: 99px;
+  height: 96px;
+  margin-left: 16px; /* Ajoutez une marge à gauche pour séparer les étoiles */
+}
+
+.star_empty {
+  width: 99px;
+  height: 96px;
+  margin-left: 16px; /* Ajoutez une marge à gauche pour séparer les étoiles */
+}
+
+/*# sourceMappingURL=Note.css.map */

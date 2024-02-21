@@ -19,7 +19,15 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
+.content-wrapper .tag-container {
+    position: relative;
+    z-index: 2;
+    padding-right: 1em;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding-top: 2em;
+    font-size: 14px;
+}
 .tag-container.custom-tag-container {
     width: 82.50%;
     right: 0;
@@ -31,7 +39,10 @@
     overflow: hidden;
     height: auto; // Permet au conteneur de s'ajuster dynamiquement en hauteur
 }
-
+.content-wrapper .caroussel .image-wrapper img.img_1 {
+    width: 100%;
+    padding-top: 2em;
+}
 .tag-header {
     width: 13em;
     padding: 2em;
@@ -56,15 +67,12 @@
 }
 
 .tag-container .tag-title {
-    padding-left: 2em;
-    top: 3px;
-    left: 40px;
+    padding-left: 32px;
     font-family: Montserrat;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 127px;
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
-    display: inline-block; // Ajuste la largeur du conteneur au contenu
-    /* Retirez la propriété width */
+    display: inline-block;
 }

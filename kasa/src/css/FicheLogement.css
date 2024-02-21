@@ -1,51 +1,182 @@
-.fiche-logement {
-  text-align: center;
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.content-wrapper {
-  margin-top: 20px;
+.round-image-container {
+  width: 192px; /* 3 fois la largeur actuelle */
+  height: 192px; /* 3 fois la hauteur actuelle */
+  background: #C4C4C4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.round-image-container .profile-image {
+  width: 180px; /* 3 fois la largeur actuelle */
+  height: 180px; /* 3 fois la hauteur actuelle */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.image-with-text {
-  position: relative;
+.caroussel .button-left,
+.caroussel .button-right {
+  padding: 1em;
+  /* Ajoutez d'autres styles CSS pour les boutons */
 }
-
-.image-with-text img {
+.caroussel .image-wrapper {
+  /* Ajoutez des styles pour ajuster la taille et la forme de l'image */
+  height: 300px;
   width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
 }
 
-.image-text {
+.star {
+  padding: 1em;
+}
+
+.host-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.titre1 {
+  color: #ff6060;
+  font-size: 56px;
+  margin-right: auto; /* Place le titre h1 à l'extrême gauche */
+}
+
+.text-container {
+  padding-top: 2em;
+  padding-right: 8em;
+  order: 1;
+  margin-right: 10px;
+  color: #FF6060;
+  font-size: 1.5em;
+  width: 93px;
+}
+
+.profile-pic-container {
+  order: 2;
+  padding-right: 12em;
+  padding-top: 2em;
+}
+
+.tag-zone {
+  display: flex;
+  align-items: center;
+}
+
+.note-container {
+  margin-left: auto; /* Mettre Note à droite */
+}
+
+* {
+  font-family: "Montserrat Light", sans-serif;
+}
+
+h2.titre2 {
+  font-size: 2em;
+  color: #ff6060;
+}
+
+.content-wrapper .tag-zone {
+  padding-top: 1em;
+}
+.content-wrapper .title-wrapper {
+  padding-top: 1em;
+  padding-left: 7em;
+}
+.content-wrapper .caroussel .image-wrapper {
+  padding-top: 0em;
+  object-fit: cover;
+  height: 0%;
+}
+.content-wrapper .caroussel .image-wrapper .caroussel .image-wrapper img {
+  height: 230%;
+  object-fit: cover;
+}
+.content-wrapper .caroussel .image-wrapper img.img_1 {
+  height: 48em;
+  width: 100%;
+  padding-top: 2em;
+}
+.content-wrapper .caroussel .image-wrapper .button-left,
+.content-wrapper .caroussel .image-wrapper .button-right {
   position: absolute;
-  bottom: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.content-wrapper .caroussel .image-wrapper .button-left img,
+.content-wrapper .caroussel .image-wrapper .button-right img {
+  /* styles pour les boutons gauche et droit */
+}
+.content-wrapper .caroussel .image-wrapper .button-left {
+  left: 0;
+}
+.content-wrapper .caroussel .image-wrapper .button-right {
+  right: 0;
+}
+.content-wrapper .caroussel .image-wrapper .image-number {
+  position: absolute;
+  padding-bottom: 2em;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 24px;
+  font-size: 2em;
 }
-
-.button-left {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
+.content-wrapper .tag-header {
+  width: 13em;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ff6060;
+  border-radius: 2em;
+  height: 25px;
 }
-
-.button-right {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
+.content-wrapper .tag-zone {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.title-wrapper {
-  margin-top: 20px;
+.content-wrapper .tag-container {
+  position: relative;
+  z-index: 2;
+  padding-right: 1em;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  font-size: 14px;
 }
 
 .collapse-wrapper {
-  margin-top: 20px;
+  display: flex;
+}
+
+.collapse-container {
+  flex: 0 0 50%; /* Les éléments prennent chacun 50% de l'espace disponible */
+  max-width: calc(50% - 10px); /* 10px pour l'espace entre les éléments */
+  margin-right: 10px; /* Ajoutez de l'espace entre les éléments */
+}
+
+.dropdown-container.custom-dropdown-container {
+  width: 90%;
+  right: 0;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3em;
+  overflow: hidden;
+  height: auto;
 }
 
 /*# sourceMappingURL=FicheLogement.css.map */
