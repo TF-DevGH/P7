@@ -13,28 +13,37 @@ const FicheLogement = () => {
   const pageMargin = '5vw';
   const availableWidth = `calc(${pageWidth} - 2 * ${pageMargin})`;
 
-  // Sélectionner un logement spécifique (par exemple, avec identifiant "1e180563")
-  const logement = logementList.find(logement => logement.identifiant === "1e180563");
+  // Identifiants des logements à afficher
+  const identifiants = ["cb02d69b"];
+
+  // Filtrer les logements à afficher en fonction des identifiants
+  const logementsAAfficher = logementList.filter(logement => identifiants.includes(logement.identifiant));
+
+  // Tableau des images à afficher dans le carrousel
+  const images = logementsAAfficher.flatMap(logement => logement["des photos"]);
+
+  // Déterminer si les boutons next/prev doivent être affichés en fonction du nombre d'images
+  const showNavigationButtons = images.length > 1;
 
   return (
     <div className="fiche-logement">
       <div className="content-wrapper">
-        <Caroussel images={logement && logement["des photos"]} availableWidth={availableWidth} />
+        <Caroussel images={images} availableWidth={availableWidth} showNavigationButtons={showNavigationButtons} />
         <div className="title-wrapper">
           <div className="host-info-wrapper">
-            <h1 className="titre1">Cozy loft on the Canal Saint-Martin</h1>
+            <h1 className="titre1">{logementsAAfficher.length > 0 && logementsAAfficher[0].title}</h1>
             <div className="text-container">
-              <p>{logement && logement.hôte.nom}</p> {/* Afficher le nom de l'hôte */}
+              <p>{logementsAAfficher.length > 0 && logementsAAfficher[0].hôte.nom}</p> {/* Afficher le nom du premier hôte */}
             </div>
             <div className="profile-pic-container">
-              <RoundImage imageUrl={logement && logement.hôte.photo} altText={logement && logement.hôte.nom} /> {/* Afficher la photo de profil de l'hôte */}
+              <RoundImage imageUrl={logementsAAfficher.length > 0 && logementsAAfficher[0].hôte.photo} altText={logementsAAfficher.length > 0 && logementsAAfficher[0].hôte.nom} /> {/* Afficher la photo de profil du premier hôte */}
             </div>
           </div>
-          <h2 className="titre2">Paris, Île-de-France</h2>
+          <h2 className="titre2">{logementsAAfficher.length > 0 && logementsAAfficher[0].location}</h2>
           <div className='tag-zone'>
-            <Tag title={"Cozy"} />
-            <Tag title={"Canal"} />
-            <Tag title={"Paris 10"} />
+            {logementsAAfficher.length > 0 && logementsAAfficher[0]["Mots clés"].map((mot, index) => (
+              <Tag key={index} title={mot} />
+            ))}
             <div className='note-container'>
               <Note />
             </div>
@@ -42,12 +51,16 @@ const FicheLogement = () => {
         </div>
 
         <div className="collapse-wrapper">
-          <div className="collapse-container">
-            <Collapse id="cb2f9222" />
-          </div>
-          <div className="collapse-container">
-            <Collapse id="d60ca600" />
-          </div>
+          {identifiants.map(id => (
+            <div className="collapse-container" key={id + "-description"}>
+                <Collapse id={id} />
+            </div>
+          ))}
+          {identifiants.map(id => (
+            <div className="collapse-container" key={id + "-equipements"}>
+                <Collapse id={id} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

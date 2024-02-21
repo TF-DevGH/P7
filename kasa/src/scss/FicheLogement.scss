@@ -116,9 +116,12 @@
           object-fit: cover;
         }
         img.img_1 {
+            margin-top: 3em;
+            padding-top: 0em;
             height: 48em;
             width: 100%;
             padding-top: 2em;
+            border-radius: 4em;
         }
   
         .button-left,
@@ -135,9 +138,11 @@
   
         .button-left {
           left: 0;
+          height: 10em;
         }
   
         .button-right {
+          height: 10em;
           right: 0;
         }
   
@@ -153,14 +158,11 @@
     }
   
     .tag-header {
-      width: 13em;
-      padding: 1.5em;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #ff6060;
-      border-radius: 2em;
-      height: 25px;
+        display: flex;
+        align-items: center;
+        background: #ff6060;
+        border-radius: 2em;
+        height: 25px;
     }
     .tag-zone {
       display: flex;
