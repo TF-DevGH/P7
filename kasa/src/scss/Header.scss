@@ -27,7 +27,7 @@ div.header-logo{
 
 nav {
     width: auto;
-    padding-top: 34px;
+    padding-top: 4em;
     padding-right: 10em; /* Changer le padding-right selon vos besoins */
 }
 
@@ -42,8 +42,8 @@ nav {
 }
 
 .logo img {
-    width: 210.32px;
-    height: 68px;
+    width : 260px;
+    height : 96px ;
 }
 
 .menu {
@@ -58,7 +58,7 @@ nav {
     cursor: pointer;
     color: #FF6060;
     font-family: "Montserrat Light", sans-serif;
-    font-size: 2em;
+    font-size: 2.25em;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0em;
@@ -85,7 +85,7 @@ left: 1031px;
 }
 
 .menu-item + .menu-item {
-    margin-left: 6em;
+    margin-left: 4em;
     margin-right: 0em;
 }
 
@@ -114,3 +114,4 @@ left: 1031px;
 .menu-item:hover::after {
     width: calc(100% - 0px);
 }
+//

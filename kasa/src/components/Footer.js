@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img src={LogoSVG} class="img_logo_footer" alt="Kasa Logo" />
+        <img src={LogoSVG} class="img_logo_footer" alt="Kasa Logo" width="160px" height="54px"/>
       </div>
       <p className="text">
         © 2020 Kasa. All rights reserved

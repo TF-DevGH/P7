@@ -1,5 +1,6 @@
 import React from 'react';
-import '../scss/Header.scss'; // Importer les styles SCSS pour le Header
+import '../scss/Header.scss'; // Importer les styles SCSS pour la version PC
+import '../scss/Header_mobile.scss'; // Importer les styles SCSS pour la version mobile
 import LogoSVG from '../assets/logoKasa.svg'; // Importer le fichier SVG du logo
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="header-logo"> {/* Changez la classe en header-logo */}
-          <img src={LogoSVG} alt="Kasa Logo" width="210.32px" height="68px" />
+          <img src={LogoSVG} alt="Kasa Logo" width="280px" height="90px" />
         </div>
         <nav className="menu">
           {/* Utiliser les fonctions pour effectuer la navigation */}

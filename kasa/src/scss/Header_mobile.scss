@@ -1,0 +1,79 @@
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+    header {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .background {
+        position: relative;
+        width: calc(70% - -96px);
+        height: 10em;
+        border-radius: 25px;
+        overflow: hidden;
+        padding-left: 18px;
+        padding-top: 49px;
+    }
+    div.header-logo {
+        width: 195.32px;
+        height: 54px;
+        padding-left: 1em;
+        top: 40px;
+        left: 100px;
+    }
+    div.header-logo img {
+        width: 10em;
+        height: 100px;
+    }
+
+    .content h2 {
+        height: 2.25em;
+        font-family: "Montserrat Light", sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 1.2;
+        padding-right: 2em;
+        width: 11em;
+        letter-spacing: 0em;
+        margin: 0;
+        text-align: left;
+    }
+    nav {
+        padding-top: 7.5em;
+        padding-right: 0em;
+        font-size: 6px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between; /* Espacement des éléments */
+        align-items: center;
+    }
+
+    .menu {
+        right: 16px;
+    }
+    .menu-item {
+        cursor: pointer;
+        color: #FF6060;
+        font-family: "Montserrat Light", sans-serif;
+        font-size: 2.25em;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: right;
+        margin: 0;
+        padding: 0 0px;
+        padding-top: 0px;
+        padding-right: 0em;
+        position: relative;
+        text-decoration: none;
+    }
+    .menu-item + .menu-item {
+        margin-left: 1em;
+        padding-left: 0em;
+        margin-right: 0em;
+    }
+    .menu-item.accueil,
+    .menu-item.apropos {
+        text-transform: uppercase;
+    }
+}
