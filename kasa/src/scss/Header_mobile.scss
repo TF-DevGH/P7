@@ -3,6 +3,7 @@
         padding-top: 0px;
         padding-left: 0px;
     }
+
     .background {
         position: relative;
         width: calc(70% - -96px);
@@ -12,6 +13,7 @@
         padding-left: 18px;
         padding-top: 49px;
     }
+
     div.header-logo {
         width: 195.32px;
         height: 54px;
@@ -19,6 +21,7 @@
         top: 40px;
         left: 100px;
     }
+
     div.header-logo img {
         width: 10em;
         height: 100px;
@@ -36,6 +39,7 @@
         margin: 0;
         text-align: left;
     }
+
     nav {
         padding-top: 7.5em;
         padding-right: 0em;
@@ -51,6 +55,7 @@
     .menu {
         right: 16px;
     }
+
     .menu-item {
         cursor: pointer;
         color: #FF6060;
@@ -67,11 +72,13 @@
         position: relative;
         text-decoration: none;
     }
+
     .menu-item + .menu-item {
         margin-left: 1em;
         padding-left: 0em;
         margin-right: 0em;
     }
+
     .menu-item.accueil,
     .menu-item.apropos {
         text-transform: uppercase;

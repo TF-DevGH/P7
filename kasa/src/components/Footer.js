@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/Footer.scss';
+import '../scss/Footer_mobile.scss';
 import LogoSVG from '../assets/logoFooter.svg'; // Remplacez ceci par le chemin vers votre fichier SVG du logo
 
 const Footer = () => {

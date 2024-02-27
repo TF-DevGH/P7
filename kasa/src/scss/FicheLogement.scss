@@ -1,49 +1,61 @@
 // FicheLogement.scss
 @font-face {
-    font-family: 'Montserrat Light';
-    src: url('../fonts/Montserrat-Light.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Montserrat Light';
+  src: url('../fonts/Montserrat-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  *{
-        font-family: 'Montserrat Light';
-        src: url('../fonts/Montserrat-Light.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-  }
+*{
+  font-family: 'Montserrat Light';
+  src: url('../fonts/Montserrat-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .round-image-container {
-    width: 192px; /* 3 fois la largeur actuelle */
-    height: 192px; /* 3 fois la hauteur actuelle */
-    background: #C4C4C4;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    .profile-image {
+.round-image-container {
+  width: 192px; /* 3 fois la largeur actuelle */
+  height: 192px; /* 3 fois la hauteur actuelle */
+  background: #C4C4C4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .profile-image {
       width: 180px; /* 3 fois la largeur actuelle */
       height: 180px; /* 3 fois la hauteur actuelle */
       border-radius: 50%;
       object-fit: cover;
-    }
+  }
 }
+
+// FicheLogement.scss continue...
+
 // FicheLogement.scss
 
-.caroussel {
-  .button-left,
-  .button-right {
-    padding: 1em; // Ajustez le padding selon vos besoins
-    /* Ajoutez d'autres styles CSS pour les boutons */
+  .caroussel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .button-left,
+    .button-right {
+      padding: 1em; // Ajustez le padding selon vos besoins
+      /* Ajoutez d'autres styles CSS pour les boutons */
+    }
   }
   
-  .image-wrapper {
-    /* Ajoutez des styles pour ajuster la taille et la forme de l'image */
-    height: 300px; // Ajustez la hauteur de l'image
-    width: 100%; // Ajustez la largeur de l'image
+  .caroussel .image-wrapper {
+    flex: 0 0 calc(33.333% - 10px); /* Pour 3 images par ligne avec un espacement de 10px entre elles */
+    margin-bottom: 10px; /* Espacement entre les lignes d'images */
+  }  
+  
+  .caroussel .image-wrapper img {
+    max-width: 100%; /* Ajuster la taille de l'image pour s'adapter au conteneur */
+    height: auto;
   }
-}
+  
 
 
   .star {

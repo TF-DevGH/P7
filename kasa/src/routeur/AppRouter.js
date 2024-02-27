@@ -15,7 +15,7 @@ const AppRouter = () => {
         <Route path="/" element={<Navigate to="/home" />} /> {/* Redirige l'URL racine vers /home */}
         <Route path="/home" element={<Home />} /> {/* Route pour la page d'accueil */}
         <Route path="/about" element={<About />} /> {/* Route pour la page "À propos" */}
-        <Route path="/FicheLogement" element={<FicheLogement />} /> {/* Route pour la page d'accueil */}
+        <Route path="/FicheLogement/:id" element={<FicheLogement />} /> {/* Route pour la page d'accueil */}
         <Route path="*" element={<NotFound />} /> {/* Route pour la page 404 */}
         
       </Routes>

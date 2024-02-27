@@ -28,7 +28,7 @@ const Home = () => {
           <div key={index} className="gallery-row">
             {/* Utilisation de .map pour générer chaque Card dans la ligne */}
             {row.map((logement) => (
-              <Card key={logement.identifiant} title={logement.title} />
+              <Card key={logement.identifiant} title={logement.title} image={logement.cover}/>
             ))}
           </div>
         ))}
