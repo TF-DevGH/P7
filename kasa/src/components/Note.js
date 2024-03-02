@@ -3,16 +3,18 @@ import '../scss/Note.scss';
 import etoilePleine from '../assets/etoilepleine.svg';
 import etoileVide from '../assets/etoilevide.svg';
 import { logementList } from '../data/logementList'; // Importez logementList.js
+import { useParams } from 'react-router-dom'; // Importez useParams depuis react-router-dom
 
 const Note = () => {
   const [etoiles, setEtoiles] = useState([false, false, false, false, false]);
+  const { id } = useParams(); // Récupérez l'identifiant de l'URL
 
   useEffect(() => {
     // Recherchez l'objet logement avec l'identifiant spécifié
-    const logement = logementList.find(logement => logement.identifiant === "c67ab8a7");
+    const logement = logementList.find(logement => logement.id === id);
     if (logement) {
-      // Extrait la valeur de la propriété "note"
-      const note = parseInt(logement.note); // Convertit la note en nombre
+      // Extrait la valeur de la propriété "rating" (note)
+      const note = parseInt(logement.rating); // Convertit la note en nombre
       if (!isNaN(note) && note >= 1 && note <= 5) {
         // Met à jour l'état des étoiles en fonction de la note
         setEtoiles(prevEtoiles => {
@@ -24,7 +26,7 @@ const Note = () => {
         });
       }
     }
-  }, []); // Exécuté une seule fois après le rendu initial
+  }, [id]); // Exécuté à chaque changement de l'identifiant de l'URL
 
   return (
     <div className="star-container">

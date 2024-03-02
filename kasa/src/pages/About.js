@@ -11,10 +11,10 @@ const About = () => {
       <Banner imageUrl={BackgroundSVG}/>
       <div>
         {/* Passez les identifiants des logements comme props à Collapse */}
-        <Collapse id="cb2f9222" />
-        <Collapse id="d60ca600" />
-        <Collapse id="bc6f7112" />
-        <Collapse id="1e181317" />
+        <Collapse identifiant="cb2f9222" />
+        <Collapse identifiant="d60ca600" />
+        <Collapse identifiant="bc6f7112" />
+        <Collapse identifiant="1e181317" />
       </div>
     </div>
   );
