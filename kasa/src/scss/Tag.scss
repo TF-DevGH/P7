@@ -11,6 +11,7 @@
 
 .tag-title {
     font-size: 1.5em;
+    text-align: center; /* Centrer le texte horizontalement */
 }
 
 .tag-container {
@@ -18,7 +19,11 @@
     z-index: 2;
     border-radius: 10px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .content-wrapper .tag-container {
     position: relative;
     z-index: 2;
@@ -28,6 +33,7 @@
     padding-top: 2em;
     font-size: 14px;
 }
+
 .tag-container.custom-tag-container {
     width: 82.50%;
     right: 0;
@@ -37,48 +43,46 @@
     transform: translateX(-50%);
     padding: 3em;
     overflow: hidden;
-    height: auto; // Permet au conteneur de s'ajuster dynamiquement en hauteur
+    height: auto;
 }
-//Nv ici :
+
 .caroussel .image-wrapper img.img_1 {
     border-radius: 1.5em;
-    max-width: calc(100vw - 10vw); /* Utiliser une largeur maximale basée sur la largeur de la fenêtre moins le padding du header */
-    width: auto; /* Ajuster la largeur de l'image pour s'ajuster automatiquement */
-    height: auto; /* Utiliser la hauteur automatique pour conserver le ratio d'aspect de l'image */
-    position: relative; /* Garder la position relative pour ajuster la position horizontale */
-    left: 50%; /* Centrer horizontalement l'image */
-    transform: translateX(-50%); /* Ajuster la position horizontale */
-    margin-top: 4em; /* Ajouter un espacement au-dessus de l'image */
-    margin-bottom: 4em; /* Ajouter un espacement en dessous de l'image */
-  }
-  
-  .caroussel .image-wrapper .button-left,
-  .caroussel .image-wrapper .button-right {
+    max-width: calc(100vw - 10vw);
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.caroussel .image-wrapper .button-left,
+.caroussel .image-wrapper .button-right {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-  }
-  
-  .caroussel .image-wrapper .button-left {
-    left: 5vw; /* Ajuster la position du bouton gauche */
+}
+
+.caroussel .image-wrapper .button-left {
+    left: 5vw;
     height: 10em;
-  }
-  
-  .caroussel .image-wrapper .button-right {
-    right: 5vw; /* Ajuster la position du bouton droit */
+}
+
+.caroussel .image-wrapper .button-right {
+    right: 5vw;
     height: 10em;
-  }
-  
-  
+}
 
 .tag-header {
-    width: 13em;
+    width: 100%; /* Utiliser la largeur totale */
     padding: 2em;
     display: flex;
     height: 47px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Centrer le contenu horizontalement */
     background: #FF6060;
     border-radius: 5px;
     height: 25px;
@@ -88,20 +92,21 @@
 
 .tag-header .menu-title {
     color: #f5f5f5;
+    text-align: center; /* Centrer le texte horizontalement */
 }
 
 .tag-content {
     padding: 1em;
-    overflow: hidden; // Assurez-vous que le contenu déborde correctement
+    overflow: hidden;
 }
 
 .tag-container .tag-title {
-    padding-left: 24px;
+    padding-left: 0; /* Ajuster le padding à zéro pour éviter le décalage */
     font-family: 'Montserrat Light', sans-serif;
     font-weight: 500;
     line-height: 127px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: center; /* Centrer le texte horizontalement */
     color: #FFFFFF;
     display: inline-block;
 }

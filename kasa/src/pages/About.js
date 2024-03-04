@@ -3,18 +3,18 @@ import Banner from '../components/Banner';
 import '../scss/Home.scss';
 import '../scss/Banner.scss';
 import BackgroundSVG from '../assets/imgAbout.svg';
-import Collapse from '../components/Collapse'; // Mettez à jour l'importation du composant Collapse
+import MenuDepliant from '../components/MenuDepliant';
 
 const About = () => {
   return (
     <div>
       <Banner imageUrl={BackgroundSVG}/>
       <div>
-        {/* Passez les identifiants des logements comme props à Collapse */}
-        <Collapse identifiant="cb2f9222" />
-        <Collapse identifiant="d60ca600" />
-        <Collapse identifiant="bc6f7112" />
-        <Collapse identifiant="1e181317" />
+        {/* Passez les titres et descriptions comme props à chaque MenuDepliant */}
+        <MenuDepliant title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
+        <MenuDepliant title="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
+        <MenuDepliant title="Service" description="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />
+        <MenuDepliant title="Sécurité" description="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes." />
       </div>
     </div>
   );

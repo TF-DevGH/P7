@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../scss/EquipementList.scss'; // Importer le fichier de style pour la liste d'équipements
 import ddmenuclosed from '../assets/ddmenuclosed.svg'; // Importez le fichier SVG
 
-const EquipementList = ({ equipments }) => {
+const EquipementList = ({ equipments, id }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -10,7 +10,7 @@ const EquipementList = ({ equipments }) => {
   };
 
   return (
-    <div className={`equipement-list-container ${isOpen ? 'open' : ''}`}>
+    <div className={`equipement-list-container ${isOpen ? 'open' : ''}`} key={`${id}-equipements`}>
       <div className="equipement-header" onClick={toggleDropdown}>
         <span className="menu-title">Équipements</span>
         <img
@@ -31,5 +31,6 @@ const EquipementList = ({ equipments }) => {
     </div>
   );
 };
+
 
 export default EquipementList;

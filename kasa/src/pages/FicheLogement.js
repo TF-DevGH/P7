@@ -2,7 +2,7 @@ import React from 'react';
 import Caroussel from '../components/Caroussel';
 import BackgroundSVG from '../assets/accomodation.svg';
 import Collapse from '../components/Collapse';
-import EquipementList from '../components/EquipementList'; // Importer EquipementList
+import EquipementList from '../components/EquipementList';
 import '../scss/FicheLogement.scss';
 import Tag from '../components/Tag';
 import Note from '../components/Note';
@@ -18,6 +18,10 @@ const FicheLogement = () => {
   const { id } = useParams();
 
   const logement = logementList.find(logement => logement.id === id);
+
+  if (!logement) {
+    return <div>Logement non trouvé.</div>;
+  }
 
   const images = logement.pictures;
   const showNavigationButtons = images.length > 1;
@@ -48,11 +52,11 @@ const FicheLogement = () => {
         </div>
 
         <div className="collapse-wrapper">
-        <div className="collapse-container" key={`${id}-equipements`}>
-            <Collapse identifiant={`${id}-equipements`} content={logement.equipments} />
+          <div className="collapse-container" key={`${id}-equipements`}>
+            <Collapse logement={logement} />
           </div>
           <div className="collapse-container" key={`${id}-equipements`}>
-            <EquipementList equipments={logement.equipments} />
+            <EquipementList equipments={logement.equipments} id={id} />
           </div>
         </div>
       </div>
