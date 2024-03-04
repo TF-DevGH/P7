@@ -62,18 +62,19 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f5f5f5;
-  border-radius: 2em;
+  border-radius: 1.5em;
   overflow: hidden;
+  padding-bottom: 1em;
 }
 
 .gallery-row {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 3em;
+  padding-top: 0em;
   margin-top: 0em;
   margin-right: 0em;
-  margin-left: 0em;
+  margin-left: 1.5em;
   margin-bottom: 0em;
 }
 

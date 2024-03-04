@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Assure que la hauteur de l'application couvre la fenêtre */
+  position: relative; /* Ajoutez une position relative à l'élément parent pour positionner les éléments Blank */
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1; /* Fait en sorte que le contenu principal s'étire pour remplir l'espace restant */
+  justify-content: space-between;
+  position: relative;
+}
+
+.blank {
+  position: absolute;
+  padding: 0em; /* Ajoutez de l'espace autour du contenu du blank (utilisez des unités appropriées) */
+  box-sizing: border-box; /* Inclut le padding dans la taille totale */
+}
+.blank.left {
+  left: 0;
+  top: 0; /* Ajustez la position en fonction de vos besoins */
+  height: 100%; /* Remplit la hauteur de l'élément parent */
+}
+.blank.right {
+  right: 0;
+  top: 0; /* Ajustez la position en fonction de vos besoins */
+  height: 100%; /* Remplit la hauteur de l'élément parent */
+}
+.blank.bottom {
+  bottom: 0;
+  left: 0; /* Ajustez la position en fonction de vos besoins */
+  width: 100%; /* Remplit la largeur de l'élément parent */
+}
+
+/*# sourceMappingURL=Blank.css.map */

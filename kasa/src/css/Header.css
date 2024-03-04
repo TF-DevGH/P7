@@ -17,21 +17,21 @@ header {
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 48px;
-  padding-left: 100px;
+  padding-top: 3vw; /* Utilisation de vw pour un padding relatif */
+  padding-left: 5vw; /* Utilisation de vw pour un padding relatif */
 }
 
 div.header-logo {
-  width: 210.32px;
-  height: 68px;
-  top: 40px;
-  left: 100px;
+  width: 25vw; /* Utilisation de vw pour une largeur relative */
+  height: 8vh; /* Utilisation de vh pour une hauteur relative */
+  top: 5vh; /* Utilisation de vh pour une position relative */
+  left: 5vw; /* Utilisation de vw pour une position relative */
 }
 
 nav {
   width: auto;
-  padding-top: 4em;
-  padding-right: 10em; /* Changer le padding-right selon vos besoins */
+  padding-top: 4vh; /* Utilisation de vh pour un padding relatif */
+  padding-right: 10vw; /* Utilisation de vw pour un padding relatif */
 }
 
 .container {
@@ -45,8 +45,8 @@ nav {
 }
 
 .logo img {
-  width: 260px;
-  height: 96px;
+  width: 20vw; /* Utilisation de vw pour une largeur relative */
+  height: 8vh; /* Utilisation de vh pour une hauteur relative */
 }
 
 .menu {
@@ -61,36 +61,22 @@ nav {
   cursor: pointer;
   color: #FF6060;
   font-family: "Montserrat Light", sans-serif;
-  font-size: 2.25em;
+  font-size: 2.25vw;
   font-weight: 500;
-  line-height: 34px;
+  line-height: 4.5vh;
   letter-spacing: 0em;
   text-align: right;
   margin: 0;
-  padding: 0 0px;
-  padding-top: 16px;
+  padding: 0 0vw;
+  padding-top: 1vh;
   padding-right: 0em;
   position: relative;
   text-decoration: none;
 }
 
-.menu-item accueil {
-  width: 136px;
-  height: 34px;
-  top: 57px;
-  left: 1031px;
-}
-
-.menu-item apropos {
-  width: 116px;
-  height: 34px;
-  top: 57px;
-  left: 1224px;
-}
-
 .menu-item + .menu-item {
-  margin-left: 4em;
-  margin-right: 0em;
+  margin-left: 4vw; /* Utilisation de vw pour un margin relatif */
+  margin-right: 0vw; /* Utilisation de vw pour un margin relatif */
 }
 
 .menu-item::before,

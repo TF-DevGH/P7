@@ -3,9 +3,9 @@ import '../scss/Collapse.scss';
 import ddmenuclosed from '../assets/ddmenuclosed.svg'; // Importez le fichier SVG
 import { logementList } from '../data/logementList'; // Importez logementList.js
 
-const Collapse = ({ identifiant }) => {
+const Collapse = ({ id }) => {
   // Recherchez l'élément correspondant dans la liste des logements en utilisant l'identifiant
-  const logement = logementList.find(item => item.id === identifiant);
+  const logement = logementList.find(item => item.identifiant === id);
 
   // Définissez l'état isOpen avec useState en dehors de la condition
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +42,5 @@ const Collapse = ({ identifiant }) => {
     </div>
   );
 };
-
 
 export default Collapse;

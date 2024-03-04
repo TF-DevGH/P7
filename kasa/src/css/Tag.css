@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat Light";
   src: url("../fonts/Montserrat-Light.otf") format("opentype");
@@ -41,9 +42,34 @@
   height: auto;
 }
 
-.content-wrapper .caroussel .image-wrapper img.img_1 {
-  width: 100%;
-  padding-top: 0em;
+.caroussel .image-wrapper img.img_1 {
+  border-radius: 1.5em;
+  max-width: 90vw; /* Utiliser une largeur maximale basée sur la largeur de la fenêtre moins le padding du header */
+  width: auto; /* Ajuster la largeur de l'image pour s'ajuster automatiquement */
+  height: auto; /* Utiliser la hauteur automatique pour conserver le ratio d'aspect de l'image */
+  position: relative; /* Garder la position relative pour ajuster la position horizontale */
+  left: 50%; /* Centrer horizontalement l'image */
+  transform: translateX(-50%); /* Ajuster la position horizontale */
+  margin-top: 4em; /* Ajouter un espacement au-dessus de l'image */
+  margin-bottom: 4em; /* Ajouter un espacement en dessous de l'image */
+}
+
+.caroussel .image-wrapper .button-left,
+.caroussel .image-wrapper .button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.caroussel .image-wrapper .button-left {
+  left: 5vw; /* Ajuster la position du bouton gauche */
+  height: 10em;
+}
+
+.caroussel .image-wrapper .button-right {
+  right: 5vw; /* Ajuster la position du bouton droit */
+  height: 10em;
 }
 
 .tag-header {
@@ -70,8 +96,8 @@
 }
 
 .tag-container .tag-title {
-  padding-left: 32px;
-  font-family: Montserrat;
+  padding-left: 24px;
+  font-family: "Montserrat Light", sans-serif;
   font-weight: 500;
   line-height: 127px;
   letter-spacing: 0em;

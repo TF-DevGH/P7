@@ -1,8 +1,8 @@
-// FicheLogement.js
-
 import React from 'react';
 import Caroussel from '../components/Caroussel';
+import BackgroundSVG from '../assets/accomodation.svg';
 import Collapse from '../components/Collapse';
+import EquipementList from '../components/EquipementList'; // Importer EquipementList
 import '../scss/FicheLogement.scss';
 import Tag from '../components/Tag';
 import Note from '../components/Note';
@@ -48,15 +48,13 @@ const FicheLogement = () => {
         </div>
 
         <div className="collapse-wrapper">
-  <div className="collapse-container" key={`${id}-description`}>
-    <Collapse identifiant={`${id}-description`} content={logement.description} />
-  </div>
-
-  <div className="collapse-container" key={`${id}-equipements`}>
-    <Collapse identifiant={`${id}-equipements`} content={logement.equipments} />
-  </div>
-</div>
-
+        <div className="collapse-container" key={`${id}-equipements`}>
+            <Collapse identifiant={`${id}-equipements`} content={logement.equipments} />
+          </div>
+          <div className="collapse-container" key={`${id}-equipements`}>
+            <EquipementList equipments={logement.equipments} />
+          </div>
+        </div>
       </div>
     </div>
   );
