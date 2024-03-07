@@ -15,6 +15,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 3em;
+  padding-right: 14em;
 }
 
 .equipement-header {
@@ -34,6 +35,7 @@
   background-color: #FF6060;
   padding: 0.5em 1em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .menu-icon {
@@ -56,7 +58,6 @@
 
 .equipement-item {
   color: #FF6060;
-  cursor: pointer;
   margin-bottom: 0.5em;
 }
 

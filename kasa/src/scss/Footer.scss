@@ -16,6 +16,14 @@
     position: relative;
     background-color: #000000
   }
+  .footer {
+    width: 100%;
+    height: 209px;
+    position: absolute; /*/
+    FIXER LE FOOTER EN BAS (Mais déplace le reste des éléments) :
+    bottom: 0; <== Aligne le footer en bas de la page /*/
+    background-color: #000000;
+}
 
   .footer-logo {
     width: 160px;

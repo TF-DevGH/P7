@@ -1,6 +1,6 @@
 import React from 'react';
 import Caroussel from '../components/Caroussel';
-import BackgroundSVG from '../assets/accomodation.svg';
+//import BackgroundSVG from '../assets/accomodation.svg';//
 import Collapse from '../components/Collapse';
 import EquipementList from '../components/EquipementList';
 import '../scss/FicheLogement.scss';

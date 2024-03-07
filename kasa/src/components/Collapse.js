@@ -11,7 +11,8 @@ const Collapse = ({ logement }) => {
     setIsOpen(!isOpen);
   };
 
-  const { description } = logement;
+  // Vérifiez si logement est défini avant de tenter d'accéder à sa propriété description
+  const { description } = logement || {};
 
   return (
     <div className="dropdown-container custom-dropdown-container">
@@ -26,7 +27,8 @@ const Collapse = ({ logement }) => {
         </div>
         {isOpen && (
           <div className="dropdown-content">
-            <p>{description}</p>
+            {/* Utilisez la description uniquement si elle est définie */}
+            {description && <p>{description}</p>}
           </div>
         )}
       </div>
