@@ -4,6 +4,7 @@ import '../scss/Home.scss';
 import '../scss/Banner.scss';
 import BackgroundSVG from '../assets/imgAbout.svg';
 import MenuDepliant from '../components/MenuDepliant';
+//Pas de About.scss, pourtant "About.js" est bien fonctionnel ! ...
 
 const About = () => {
   return (

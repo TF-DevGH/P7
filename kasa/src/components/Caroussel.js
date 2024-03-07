@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import vectord from '../assets/vectord.svg';
 import vectorg from '../assets/vectorg.svg';
 import '../scss/Caroussel.scss';
-
-const Caroussel = ({ images, availableWidth }) => {
+const Caroussel = ({ images, width, height }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handlePrevImage = () => {
@@ -22,8 +21,8 @@ const Caroussel = ({ images, availableWidth }) => {
 
   return (
     <div className="caroussel">
-      <div className="image-wrapper">
-        <img src={images[currentImageIndex]} alt="" className="img_1" />
+      <div className="image-wrapper" style={{ width, height }}>
+        <img src={images[currentImageIndex]} alt="" className="img_1" style={{ width: '100%', height: '100%' }} />
 
         <div className="image-number">{renderImageNumber()}</div>
 
@@ -41,5 +40,6 @@ const Caroussel = ({ images, availableWidth }) => {
     </div>
   );
 };
+
 
 export default Caroussel;
