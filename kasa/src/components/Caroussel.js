@@ -21,8 +21,8 @@ const Caroussel = ({ images, width, height }) => {
 
   return (
     <div className="caroussel">
-      <div className="image-wrapper" style={{ width, height }}>
-        <img src={images[currentImageIndex]} alt="" className="img_1" style={{ width: '100%', height: '100%' }} />
+      <div className="image-wrapper">
+        <img src={images[currentImageIndex]} alt="" className="img_1"/>
 
         <div className="image-number">{renderImageNumber()}</div>
 

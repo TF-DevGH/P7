@@ -4,69 +4,64 @@
     font-weight: normal;
     font-style: normal;
   }
-  
+  $white-color: white;
   * {
     font-family: 'Montserrat Light', sans-serif;
   }
-.caroussel {
-    width: 100%;
-    padding: 0em;
+
+  .caroussel {
+    width: 100vw; // Ensure the carousel spans the full viewport width
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .content-wrapper {
-        width: 100%;
-    }
-
+  
     .image-wrapper {
-        position: relative;
+      position: relative;
+      width: 100%; // Ensures the wrapper spans the full width of its parent
+      margin: 0 auto;
+      overflow: hidden; // Keeps everything neat
+  
+      &::before {
+        content: "";
+        display: block;
         width: 100%;
-        max-width: 92%;
-        height: 415px;
-        margin: 0 auto; // Pour centrer horizontalement le conteneur
-        padding-left: 0em;
-        padding-right: 3.5em; // Ajout de padding à droite
-
-        .image-number {
-            position: absolute;
-            top: 95%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 24px;
-        }
-
-
-
-        img {
-            width: 100%; // Largeur de l'image à 100% du conteneur
-            height: 100%; // Hauteur de l'image à 100% du conteneur
-            object-fit: cover; // Ajuste la taille de l'image pour couvrir le conteneur sans déformer ses proportions
-        }
-
-        .button-left,
-        .button-right {
-            padding-left: 1em; // Ajout de padding au bouton droit
-            padding-right: 5em; // Ajout de padding au bouton gauche
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            z-index: 1;
-
-            img {
-                /* styles pour les boutons gauche et droit */
-            }
-        }
-
-        .button-left {
-            left: 0;
-        }
-
-        .button-right {
-            right: 0;
-        }
+        padding-top: 56.25%; // Maintains a 16:9 aspect ratio
+      }
+  
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Ensures the image covers the area properly
+      }
+  
+      .image-number {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $white-color;
+        font-size: 24px;
+        z-index: 2; // Ensures visibility over the image
+      }
+  
+      .button-left, .button-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1;
+      }
+  
+      .button-left {
+        left: 0;
+      }
+  
+      .button-right {
+        right: 0;
+      }
     }
-}
+  }

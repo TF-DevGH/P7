@@ -9,6 +9,7 @@ import Note from '../components/Note';
 import RoundImage from '../components/RoundImage';
 import { logementList } from '../data/logementList';
 import { useParams } from "react-router-dom";
+import Banner from '../components/Banner';
 
 const FicheLogement = () => {
   const pageWidth = '100vw';
@@ -29,7 +30,7 @@ const FicheLogement = () => {
   return (
     <div className="fiche-logement">
       <div className="content-wrapper">
-        <Caroussel images={images} availableWidth={availableWidth} showNavigationButtons={showNavigationButtons} />
+        <Banner imageUrl={logement.cover} text="Chez vous, partout et ailleurs" />
         <div className="title-wrapper">
           <div className="host-info-wrapper">
             <h1 className="titre1">{logement.title}</h1>
