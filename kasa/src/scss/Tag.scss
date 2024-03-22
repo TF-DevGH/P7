@@ -49,18 +49,18 @@
 }
 
 .caroussel .image-wrapper {
-  position: relative;
-  width: auto; // Ajuste la largeur automatiquement
-  max-width: calc(80vw - 10vw); // Fixe la largeur à 80% de la largeur de la page
+  //position: relative;
+  //width: auto; // Ajuste la largeur automatiquement
+  max-width: calc(95vw); // Fixe la largeur à 80% de la largeur de la page
   height: 415px; // Hauteur fixe de l'image
   margin: 0 auto;
-  padding-left: 0em;
-  padding-right: 3.5em;
+  //padding-left: 0em;
+  //padding-right: 3.5em;
 
   img {
-    width: 100%; // Fixe la largeur de l'image à 100% du conteneur
-    height: 100%; // Fixe la hauteur de l'image à 100% du conteneur
-    object-fit: cover; // Ajuste la taille de l'image pour couvrir le conteneur
+    //width: 100%; // Fixe la largeur de l'image à 100% du conteneur
+    //height: 100%; // Fixe la hauteur de l'image à 100% du conteneur
+    //object-fit: cover; // Ajuste la taille de l'image pour couvrir le conteneur
     border-radius: 1.5em;
   }
 

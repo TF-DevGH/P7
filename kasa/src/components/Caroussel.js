@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import vectord from '../assets/vectord.svg';
 import vectorg from '../assets/vectorg.svg';
 import '../scss/Caroussel.scss';
-const Caroussel = ({ images, width, height }) => {
+const Caroussel = ({images}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handlePrevImage = () => {

@@ -11,9 +11,7 @@
 .caroussel {
   width: 100vw;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 3.5em;
 }
 .caroussel .image-wrapper {
   position: relative;
@@ -31,9 +29,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .caroussel .image-wrapper .image-number {
   position: absolute;

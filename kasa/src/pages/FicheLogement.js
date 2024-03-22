@@ -30,7 +30,7 @@ const FicheLogement = () => {
   return (
     <div className="fiche-logement">
       <div className="content-wrapper">
-        <Banner imageUrl={logement.cover} text="Chez vous, partout et ailleurs" />
+        <Caroussel images={logement.pictures}/>
         <div className="title-wrapper">
           <div className="host-info-wrapper">
             <h1 className="titre1">{logement.title}</h1>
