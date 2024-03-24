@@ -10,13 +10,13 @@
   }
 
   .caroussel {
-    width: 100vw; // Ensure the carousel spans the full viewport width
-    cursor: pointer;
-    margin-top:3.5em;
+      cursor: pointer;
+      margin-top: 3.5em;
+      width: 90vw;
+      padding-left: 7em;
     //display: flex;
     //align-items: center;
     //justify-content: space-between;
-  
     .image-wrapper {
       position: relative;
       width: 100%; // Ensures the wrapper spans the full width of its parent
