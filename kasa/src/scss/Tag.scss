@@ -52,7 +52,7 @@
   //position: relative;
   //width: auto; // Ajuste la largeur automatiquement
   max-width: calc(95vw); // Fixe la largeur à 80% de la largeur de la page
-  height: 415px; // Hauteur fixe de l'image
+  aspect-ratio: 1240 / 415; // Hauteur fixe de l'image
   margin: 0 auto;
   //padding-left: 0em;
   //padding-right: 3.5em;

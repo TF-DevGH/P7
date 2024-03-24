@@ -47,7 +47,7 @@
 
 .caroussel .image-wrapper {
   max-width: 95vw;
-  height: 415px;
+  aspect-ratio: 1240/415;
   margin: 0 auto;
 }
 .caroussel .image-wrapper img {
