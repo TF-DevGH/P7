@@ -37,6 +37,7 @@
 
 .caroussel .image-wrapper img.img_1 {
   width: 100%; /* Modifier la largeur de l'image pour qu'elle s'ajuste automatiquement */
+  cursor: default; /* Pour faire ressortir le côté "cliquable" au survol des buttons. */
   object-fit: cover; /* Redimensionner et couper l'image pour s'adapter au conteneur */
 }
 
@@ -131,6 +132,7 @@ h2.titre2 {
   object-fit: cover;
 }
 .content-wrapper .caroussel .image-wrapper .image-number {
+  cursor: default;
   position: absolute;
   padding-bottom: 0em;
   left: 50%;
@@ -169,7 +171,7 @@ h2.titre2 {
 }
 
 .dropdown-container.custom-dropdown-container {
-  width: 79%;
+  width: 82%;
   right: 0;
   position: relative;
   bottom: 0;

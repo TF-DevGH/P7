@@ -9,9 +9,10 @@
 }
 
 .caroussel {
-  width: 100vw;
   cursor: pointer;
   margin-top: 3.5em;
+  width: 90vw;
+  padding-left: 7em;
 }
 .caroussel .image-wrapper {
   position: relative;
