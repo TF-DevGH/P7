@@ -1,3 +1,5 @@
+@import '_variables.scss';
+@import '_mixins.scss';
 @font-face {
     font-family: 'Montserrat Light';
     src: url('../fonts/Montserrat-Light.otf') format('opentype');
@@ -22,13 +24,13 @@
 .equipement-header {
     background-color: #FF6060;
     color: #f5f5f5;
-    padding: 2em;
+    padding: 0.5em 1em;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    height: 47px;
+    height: 53px;
 }
 
 .menu-title {

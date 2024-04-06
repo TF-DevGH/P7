@@ -2,7 +2,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@import '_variables.scss';
+@import '_mixins.scss';
 @font-face {
     font-family: 'Montserrat Light';
     src: url('../fonts/Montserrat-Light.otf') format('opentype');
@@ -105,3 +106,10 @@ nav {
 .menu-item:hover::after {
     width: calc(100% - 0px);
 }
+@include respond-to('mobile') {
+    .menu-item {
+        padding-top: 3vh;
+        font-size: 3.25vw;
+
+    }
+  }
