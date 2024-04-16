@@ -18,7 +18,7 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="header-logo"> {/* Changez la classe en header-logo */}
-          <img src={LogoSVG} alt="Kasa Logo" width="300px" height="100px" />
+          <img class="KasaLogo" src={LogoSVG} alt="Kasa Logo"/>
         </div>
         <nav className="menu">
           {/* Utiliser les fonctions pour effectuer la navigation */}

@@ -22,13 +22,19 @@ header {
     padding-top: 3vw; /* Utilisation de vw pour un padding relatif */
     padding-left: 4vw;    /*anciennement 5vw; Utilisation de vw pour un padding relatif */
 }
-
+/*
+.KasaLogo {
+    width: 100px;
+    height: 50px;
+}
+*/
 div.header-logo {
     width: 25vw; /* Utilisation de vw pour une largeur relative */
     height: 8vh; /* Utilisation de vh pour une hauteur relative */
     top: 5vh; /* Utilisation de vh pour une position relative */
     left: 5vw; /* Utilisation de vw pour une position relative */
 }
+
 
 nav {
     width: auto;
@@ -111,5 +117,9 @@ nav {
         padding-top: 3vh;
         font-size: 3.25vw;
 
+    }
+    .KasaLogo {
+        width: 100px;
+        height: 50px;
     }
   }
