@@ -76,3 +76,12 @@
 .equipement-item.open {
     height: auto;
 }
+@include respond-to('mobile') {
+    .menu-title {
+        font-size: 1.35em;
+        background-color: #FF6060;
+        padding: 0em 0em;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

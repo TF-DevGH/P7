@@ -37,6 +37,7 @@
         top: 20%;
         left: 7em;
       }
+      /*
       .text {
         padding-bottom: 0em;
         width: 680px;
@@ -52,4 +53,7 @@
         transform: translateX(-50%);
         color: white;
     }
+    */
+    /// GROS PROBLEME : IL FAUT QUE "Footer_Mobile" dégage et que les modifications se fassent dans le Footer, via _mixins & _variables.
+    /// Actuellement ".text" qui est en commentaire, change du tout au tout le footer.
 }

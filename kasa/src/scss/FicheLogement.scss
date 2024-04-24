@@ -6,7 +6,8 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@import '_variables.scss';
+@import '_mixins.scss';
 * {
   font-family: 'Montserrat Light', sans-serif;
 }
@@ -212,4 +213,18 @@ h2.titre2 {
   overflow: hidden;
   height: auto;
   margin-top: 3em;
+}
+@include respond-to('mobile') {
+  .dropdown-container.custom-dropdown-container {
+    width: 90%;
+    right: 0;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px;
+    overflow: hidden;
+    height: auto;
+    margin-top: 2em;
+}
 }
