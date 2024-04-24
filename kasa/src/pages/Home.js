@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div>
-      <Banner imageUrl={BackgroundSVG} text="Chez vous, partout et ailleurs" />
+      <Banner imageUrl={BackgroundSVG} text="Chez vous, partout et ailleurs" className="HomeBanner" imgClassName="HomeBannerImage" />
       <div className="gallery">
         {groupedLogements.map((row, index) => (
           <div key={index} className="gallery-row">

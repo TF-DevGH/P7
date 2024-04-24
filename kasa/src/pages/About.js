@@ -9,7 +9,7 @@ import MenuDepliant from '../components/MenuDepliant';
 const About = () => {
   return (
     <div>
-      <Banner imageUrl={BackgroundSVG}/>
+      <Banner imageUrl={BackgroundSVG} className="AboutBanner" imgClassName="AboutBannerImage"/>
       <div>
         {/* Passez les titres et descriptions comme props à chaque MenuDepliant */}
         <MenuDepliant title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
