@@ -8,14 +8,6 @@
   padding-top: 100px;
 }
 
-.background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.7);
-  border-radius: 25px;
-}
-
 .content {
   position: absolute;
   top: 65%;
@@ -52,6 +44,18 @@
   justify-content: center;
   width: 100%;
   padding: 0em 1em;
+}
+
+@media (max-width: 767.98px) {
+  /*/.background-image {
+      position: relative;
+      width: calc(70% + 96px);
+      height: 10em;
+      border-radius: 25px;
+      overflow: hidden;
+      padding-left: 18px;
+      padding-top: 50px;
+  }/*/
 }
 
 /*# sourceMappingURL=Home.css.map */
