@@ -62,13 +62,15 @@
   width: 15.3em;
   margin-bottom: 3em;
   padding-bottom: 2px;
-  position: relative; /* Ajout de la position relative */
+  position: relative;
+  /* Ajout de la position relative */
   cursor: pointer;
 }
 
 .returnText:hover::before,
 .returnText:hover::after {
-  width: 100%; /* Remplacez 100% par la largeur souhaitée */
+  width: 100%;
+  /* Remplacez 100% par la largeur souhaitée */
 }
 
 .returnText::before,
@@ -90,6 +92,73 @@
 .returnText::after {
   right: 50%;
   transform: translateX(50%);
+}
+
+@media (max-width: 767.98px) {
+  .Element404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0em;
+  }
+  .notFoundText {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 89px;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+  }
+  .Text {
+    font-family: "Montserrat Light";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FF6060;
+  }
+  .returnText {
+    /* margin-top: 58px; */
+    font-size: 14px;
+    width: 15.3em;
+    /* margin-bottom: 0em; */
+    /* padding-bottom: 180px; */
+    position: relative;
+    cursor: pointer;
+  }
+  .Text {
+    font-family: "Montserrat Light";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    /* line-height: 4em; */
+    text-align: center;
+    color: #FF6060;
+  }
+  .D404 {
+    width: 0px;
+    height: 650px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12em;
+    /* padding-bottom: 250px; */
+  }
+  .notFoundText {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 136.9px;
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+  .errorMessage {
+    margin-top: 0px;
+    font-size: 18px;
+    width: 12em;
+    height: 110px;
+  }
 }
 
 /*# sourceMappingURL=NotFound.css.map */
