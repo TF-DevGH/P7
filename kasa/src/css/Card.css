@@ -51,9 +51,11 @@
   .card_img_container {
     padding: 0;
     padding-top: 0.5em;
+    border-radius: 15px;
   }
   .card_img_container .card_img {
     height: 20em;
+    border-radius: 15px;
   }
   .card_title {
     font-size: 16px;

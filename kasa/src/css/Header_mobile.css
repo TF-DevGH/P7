@@ -24,18 +24,6 @@
     width: 10em;
     height: 100px;
   }
-  .content h2 {
-    height: 2.25em;
-    font-family: "Montserrat Light", sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 1.2;
-    padding-right: 2em;
-    width: 11em;
-    letter-spacing: 0em;
-    margin: 0;
-    text-align: left;
-  }
   nav {
     padding-top: 7.5em;
     padding-right: 0em;
