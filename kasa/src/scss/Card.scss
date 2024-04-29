@@ -52,10 +52,10 @@
 
 @include respond-to('mobile') {
   .card {
-    margin: 10px 0;
+    margin: 0px 0;
     padding-top: 0.5em;
-    padding-bottom: 0.5em;
-
+    padding-bottom: 0em;
+    
     &_img_container {
       padding: 0;
       padding-top: 0.5em;
@@ -67,8 +67,7 @@
 
     &_title {
       font-size: $font-size-base;
-      bottom: -1em; // Placement du titre en dessous de l'image
-      background-color: rgba($black, 0.5); // Fond semi-transparent pour la lisibilité
+      bottom: 0em; // Placement du titre en dessous de l'image
       width: calc(100% - 2em); // Ajustement de la largeur pour le padding
       padding: 0.5em;
       border-radius: 0 0 1.5em 1.5em; // Arrondir les coins inférieurs

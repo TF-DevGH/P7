@@ -5,26 +5,23 @@
     font-style: normal;
 }
 
+@import '_variables.scss'; // Assurez-vous que le chemin d'importation est correct
+@import '_mixins.scss';
+
 * {
     font-family: 'Montserrat Light', sans-serif;
 }
+
+//Mettre les styles pour desktop ici :
 .HomeBanner {
     position: relative;
-    width: calc(70% - -96px);
-    height: 10em;
+    width: calc(100% - 170px); // Ajustez la largeur en fonction de la largeur du header et de la marge
+    height: 32em; // Ajustez la hauteur selon vos besoins
     border-radius: 25px;
     overflow: hidden;
-    padding-left: 18px;
-    padding-top: 49px;
-}
-.AboutBanner {
-    position: relative;
-    width: 95%;
-    height: 20em;
-    border-radius: 0px;
-    overflow: hidden;
-    padding-left: 22px;
-    padding-top: 0px;
+    padding-left: 100px;
+    /* Ajout de padding pour centrer le contenu */
+    padding-top: 100px;
 }
 
 .HomeBannerImage {
@@ -34,21 +31,15 @@
     filter: brightness(0.7);
     border-radius: 25px;
 }
-.AboutBannerImage {
-    width: 100%;
-    height: 100%; // Ajustez la hauteur de l'image selon vos besoins
-    object-fit: cover;
-    filter: brightness(0.7);
-    border-radius: 25px;
-}
-
 
 .content {
     position: absolute;
-    top: 65%; /* Ajustez cette valeur pour déplacer le texte verticalement */
+    top: 65%;
+    /* Ajustez cette valeur pour déplacer le texte verticalement */
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; /* Centrez le texte horizontalement */
+    text-align: center;
+    /* Centrez le texte horizontalement */
     color: white;
 }
 
@@ -62,3 +53,38 @@
     margin: 0;
 }
 
+@include respond-to('mobile') {
+    .HomeBanner {
+        position: relative;
+        width: calc(70% - -96px);
+        height: 10em;
+        border-radius: 25px;
+        overflow: hidden;
+        padding-left: 18px;
+        padding-top: 49px;
+    }
+    .HomeBannerImage {
+        width: 100%;
+        height: 100%; // Ajustez la hauteur de l'image selon vos besoins
+        object-fit: cover;
+        filter: brightness(0.7);
+        border-radius: 25px;
+    }
+
+    .AboutBanner {
+        position: relative;
+        width: 95%;
+        height: 20em;
+        border-radius: 0px;
+        overflow: hidden;
+        padding-left: 22px;
+        padding-top: 0px;
+    }
+    .AboutBannerImage {
+        width: 100%;
+        height: 100%; // Ajustez la hauteur de l'image selon vos besoins
+        object-fit: cover;
+        filter: brightness(0.7);
+        border-radius: 25px;
+    }
+}

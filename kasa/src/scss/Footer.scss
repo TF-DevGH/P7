@@ -43,15 +43,31 @@
 // Styles pour mobile
 @include respond-to('mobile') {
   .footer {
-    padding: 20px 0; // Padding réduit pour mobile
-    margin-top: 8em;
+      max-width: 100%;
+      margin-top: 33px;
+      width: 100%;
+      height: 140px;
+      position: relative;
+      background-color: #000000;
+      padding: 20px 0; // Padding réduit pour mobile
+      margin-top: 2em;
+    //&-logo = .footer-logo ?
     &-logo {
       width: 120px; // Taille réduite pour mobile
       margin-bottom: 10px; // Espace sous le logo réduit pour mobile
     }
-
+    .footer-logo {
+      width: 160px;
+      height: auto;
+      margin-bottom: 0px;
+  }
+  //.text = .footer .text là je crois en l'occurence.
     .text {
       font-size: $font-size-small; // Taille de police réduite pour mobile
     }
+    .footer .text {
+      font-size: 15px;
+      padding-bottom: 0em;
+  }
   }
 }
