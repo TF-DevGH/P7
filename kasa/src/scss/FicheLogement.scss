@@ -231,17 +231,16 @@ h2.titre2 {
   height: auto;
   margin-top: 3em;
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @include respond-to('mobile') {
   .star {
     padding: 0.5em;
 }
-
-  .profile-pic-container {
-    order: 2;
-    padding-top: 4em;
-  }
-
+.profile-pic-container {
+  order: 2;
+  padding-right: 0em;
+  padding-top: 2em;
+}
   .dropdown-container.custom-dropdown-container {
     width: 90%;
     right: 0;

@@ -202,7 +202,8 @@ h2.titre2 {
   }
   .profile-pic-container {
     order: 2;
-    padding-top: 4em;
+    padding-right: 0em;
+    padding-top: 2em;
   }
   .dropdown-container.custom-dropdown-container {
     width: 90%;

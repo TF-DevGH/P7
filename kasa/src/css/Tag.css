@@ -110,6 +110,15 @@
 }
 
 @media (max-width: 767.98px) {
+  .content-wrapper .tag-container {
+    position: relative;
+    z-index: 2;
+    padding-right: 0em;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding-top: 2em;
+    font-size: 7px;
+  }
   /*.caroussel .image-wrapper {*/
   .caroussel .image-wrapper img {
     border-radius: 10px;
