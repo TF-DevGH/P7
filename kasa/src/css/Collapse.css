@@ -86,7 +86,7 @@
 
 @media (max-width: 767.98px) {
   .dropdown-header {
-    padding: 1.5em;
+    padding: 1.25em;
     cursor: pointer;
     display: flex;
     height: 30px;
@@ -102,11 +102,18 @@
     overflow: hidden;
     transition: height 0.3s ease;
   }
+  .menu-title {
+    font-size: 1.1em;
+    background-color: #FF6060;
+    padding: 0em 0em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   .dropdown.open .dropdown-content {
     background-color: #F6F6F6;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.5em;
     overflow: hidden;
   }
