@@ -6,15 +6,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @import '_variables.scss';
 @import '_mixins.scss';
+
 * {
   font-family: 'Montserrat Light', sans-serif;
 }
 
 .round-image-container {
-  width: 192px; /* 3 fois la largeur actuelle */
-  height: 192px; /* 3 fois la hauteur actuelle */
+  width: 192px;
+  /* 3 fois la largeur actuelle */
+  height: 192px;
+  /* 3 fois la hauteur actuelle */
   background: #F6F6F6;
   border-radius: 50%;
   display: flex;
@@ -22,14 +26,17 @@
   align-items: center;
 
   .profile-image {
-    width: 180px; /* 3 fois la largeur actuelle */
-    height: 180px; /* 3 fois la hauteur actuelle */
+    width: 180px;
+    /* 3 fois la largeur actuelle */
+    height: 180px;
+    /* 3 fois la hauteur actuelle */
     border-radius: 50%;
     object-fit: cover;
   }
 }
 
 .caroussel {
+
   //display: flex;
   //flex-wrap: wrap;
   //justify-content: space-between;
@@ -43,13 +50,17 @@
 
 .caroussel .image-wrapper {
   //flex: 0 0 calc(33.333% - 10px); /* Pour 3 images par ligne avec un espacement de 10px entre elles */
-  margin-bottom: 10px; /* Espacement entre les lignes d'images */
+  margin-bottom: 10px;
+  /* Espacement entre les lignes d'images */
 }
 
 .caroussel .image-wrapper img.img_1 {
-  width: 100%; /* Modifier la largeur de l'image pour qu'elle s'ajuste automatiquement */
-  cursor: default; /* Pour faire ressortir le côté "cliquable" au survol des buttons. */
-  object-fit: cover; /* Redimensionner et couper l'image pour s'adapter au conteneur */
+  width: 100%;
+  /* Modifier la largeur de l'image pour qu'elle s'ajuste automatiquement */
+  cursor: default;
+  /* Pour faire ressortir le côté "cliquable" au survol des buttons. */
+  object-fit: cover;
+  /* Redimensionner et couper l'image pour s'adapter au conteneur */
   //height: 100%; /* Ajuster la hauteur de l'image pour remplir le conteneur */
   //position: relative; /* Ajouter une position relative pour positionner l'image */
   //left: 50%; /* Centrer horizontalement l'image */
@@ -97,7 +108,8 @@
 .titre1 {
   color: #ff6060;
   font-size: 56px;
-  margin-right: auto; /* Place le titre h1 à l'extrême gauche */
+  margin-right: auto;
+  /* Place le titre h1 à l'extrême gauche */
 }
 
 .text-container {
@@ -122,7 +134,8 @@
 }
 
 .note-container {
-  margin-left: auto; /* Mettre Note à droite */
+  margin-left: auto;
+  /* Mettre Note à droite */
 }
 
 h2.titre2 {
@@ -141,10 +154,11 @@ h2.titre2 {
   }
 
   .caroussel {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
     .image-wrapper {
       //padding-top: 0em;
       //object-fit: cover;
@@ -197,9 +211,12 @@ h2.titre2 {
 }
 
 .collapse-container {
-  flex: 0 0 50%; /* Les éléments prennent chacun 50% de l'espace disponible */
-  max-width: calc(50% - 10px); /* 10px pour l'espace entre les éléments */
-  margin-right: 10px; /* Ajoutez de l'espace entre les éléments */
+  flex: 0 0 50%;
+  /* Les éléments prennent chacun 50% de l'espace disponible */
+  max-width: calc(50% - 10px);
+  /* 10px pour l'espace entre les éléments */
+  margin-right: 10px;
+  /* Ajoutez de l'espace entre les éléments */
 }
 
 .dropdown-container.custom-dropdown-container {
@@ -214,7 +231,17 @@ h2.titre2 {
   height: auto;
   margin-top: 3em;
 }
+
 @include respond-to('mobile') {
+  .star {
+    padding: 0.5em;
+}
+
+  .profile-pic-container {
+    order: 2;
+    padding-top: 4em;
+  }
+
   .dropdown-container.custom-dropdown-container {
     width: 90%;
     right: 0;
@@ -226,5 +253,87 @@ h2.titre2 {
     overflow: hidden;
     height: auto;
     margin-top: 2em;
-}
+  }
+
+  .content-wrapper .caroussel .image-wrapper .image-number {
+    cursor: default;
+    position: absolute;
+    padding-bottom: 0em;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 1em;
+  }
+
+  .caroussel .image-wrapper .button-left {
+    left: 2vw;
+    height: 24px;
+    width: 24px;
+  }
+
+  .caroussel .button-left,
+  .caroussel .button-right {
+    padding: 16px;
+  }
+
+  .content-wrapper .title-wrapper {
+    padding-top: 0em;
+    padding-left: 16px;
+  }
+
+  .host-info-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 0em;
+  }
+
+  .titre1 {
+    color: #ff6060;
+    font-size: 24px;
+    margin-right: auto;
+    padding-left: 0px;
+  }
+
+  h2.titre2 {
+    font-size: 1em;
+    color: #ff6060;
+  }
+
+  .content-wrapper .title-wrapper {
+    padding-top: 0em;
+    padding-left: 16px;
+  }
+
+  //C'est le bordel de partout mais ça organise un peu tout ça (et en haut et juste en bas LA !) :
+  .content-wrapper .tag-container {
+    position: relative;
+    z-index: 2;
+    padding-right: 0em;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding-top: 0em;
+    font-size: 12px;
+  }
+
+  .collapse-container {
+    flex: 0 0 50%;
+    max-width: fit-content;
+    margin-right: 0px;
+  }
+
+  .equipement-name {
+    font-size: 1em;
+    color: #FF6060;
+  }
+
+  //A modif - fort :
+  .text-container {
+    padding-top: 0em;
+    padding-right: 4em;
+    order: 1;
+    margin-right: 10px;
+    color: #FF6060;
+    font-size: 1.5em;
+    width: 93px;
+  }
 }

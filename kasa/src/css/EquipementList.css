@@ -82,6 +82,15 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .equipement-list-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+    /* padding: 3em; */
+    /* padding-right: 14em; */
+  }
 }
 
 /*# sourceMappingURL=EquipementList.css.map */

@@ -4,6 +4,18 @@
     font-weight: normal;
     font-style: normal;
   }
+@import '_variables.scss';
+@import '_mixins.scss';
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Montserrat Light', sans-serif;
+}
   *{
         font-family: 'Montserrat Light';
         src: url('../fonts/Montserrat-Light.otf') format('opentype');
@@ -27,3 +39,11 @@
     }
   }
   
+  @include respond-to('mobile') {
+    .round-image-container .profile-image {
+      width: 120px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+}

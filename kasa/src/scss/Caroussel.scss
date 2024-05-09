@@ -8,7 +8,8 @@
   * {
     font-family: 'Montserrat Light', sans-serif;
   }
-
+  @import '_variables.scss'; // Assurez-vous que le chemin d'importation est correct
+  @import '_mixins.scss';
   .caroussel {
       cursor: pointer;
       margin-top: 3.5em;
@@ -66,3 +67,11 @@
       }
     }
   }
+  @include respond-to('mobile') {
+  .caroussel {
+      cursor: pointer;
+      margin-top: 0em;
+      width: 100%;
+      padding-left: 0em;
+  }
+}
