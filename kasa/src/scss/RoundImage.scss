@@ -32,8 +32,8 @@
     align-items: center;
   
     .profile-image {
-      width: 60px;
-      height: 60px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
     }
@@ -41,7 +41,7 @@
   
   @include respond-to('mobile') {
     .round-image-container .profile-image {
-      width: 120px;
+      width: 64px;
       height: 64px;
       border-radius: 50%;
       object-fit: cover;
