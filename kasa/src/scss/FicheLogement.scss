@@ -261,10 +261,11 @@ h2.titre2 {
   flex-direction: column;
 }
 .collapse-container {
+  max-width: 100%;
   flex: 0 0 50%;
-  max-width: none;
-  margin-right: 0px;
   width: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
 }
   .dropdown-container.custom-dropdown-container {
     width: 90%;
@@ -338,13 +339,6 @@ h2.titre2 {
     padding-top: 0em;
     font-size: 12px;
   }
-
-  .collapse-container {
-    flex: 0 0 50%;
-    max-width: fit-content;
-    margin-right: 0px;
-  }
-
   .equipement-name {
     font-size: 1em;
     color: #FF6060;
