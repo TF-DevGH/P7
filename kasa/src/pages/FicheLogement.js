@@ -1,6 +1,5 @@
 import React from 'react';
 import Caroussel from '../components/Caroussel';
-//import BackgroundSVG from '../assets/accomodation.svg';//
 import Collapse from '../components/Collapse';
 import EquipementList from '../components/EquipementList';
 import '../scss/FicheLogement.scss';
@@ -24,28 +23,33 @@ const FicheLogement = () => {
     return <div>Logement non trouvé.</div>;
   }
 
-  const images = logement.pictures;
-  const showNavigationButtons = images.length > 1;
-
   return (
     <div className="fiche-logement">
       <div className="content-wrapper">
         <Caroussel images={logement.pictures}/>
         <div className="title-wrapper">
-          <div className="host-info-wrapper">
-            <h1 className="titre1">{logement.title}</h1>
-            <div className="text-container">
-              <p>{logement.host.name}</p>
+          <div className="titles-and-host-info">
+            <div className="titles">
+              <h1 className="titre1">{logement.title}</h1>
+              <h2 className="titre2">{logement.location}</h2>
             </div>
-            <div className="profile-pic-container">
-              <RoundImage imageUrl={logement.host.picture} altText={logement.host.name} />
+            <div className="host-info">
+              <div className="text-and-pic">
+                <div className="text-container">
+                  <p>{logement.host.name}</p>
+                </div>
+                <div className="profile-pic-container">
+                  <RoundImage imageUrl={logement.host.picture} altText={logement.host.name} />
+                </div>
+              </div>
             </div>
           </div>
-          <h2 className="titre2">{logement.location}</h2>
-          <div className='tag-zone'>
-            {logement.tags.map((tag, index) => (
-              <Tag key={index} title={tag} />
-            ))}
+          <div className="tag-and-note">
+            <div className='tag-zone'>
+              {logement.tags.map((tag, index) => (
+                <Tag key={index} title={tag} />
+              ))}
+            </div>
             <div className='note-container'>
               <Note />
             </div>

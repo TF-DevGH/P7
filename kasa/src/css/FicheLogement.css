@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Montserrat Light";
   src: url("../fonts/Montserrat-Light.otf") format("opentype");
@@ -11,9 +10,7 @@
 
 .round-image-container {
   width: 192px;
-  /* 3 fois la largeur actuelle */
   height: 192px;
-  /* 3 fois la hauteur actuelle */
   background: #F6F6F6;
   border-radius: 50%;
   display: flex;
@@ -22,9 +19,7 @@
 }
 .round-image-container .profile-image {
   width: 180px;
-  /* 3 fois la largeur actuelle */
   height: 180px;
-  /* 3 fois la hauteur actuelle */
   border-radius: 50%;
   object-fit: cover;
 }
@@ -32,21 +27,16 @@
 .caroussel .button-left,
 .caroussel .button-right {
   padding: 3em;
-  /* Ajoutez d'autres styles CSS pour les boutons */
 }
 
 .caroussel .image-wrapper {
   margin-bottom: 10px;
-  /* Espacement entre les lignes d'images */
 }
 
 .caroussel .image-wrapper img.img_1 {
   width: 100%;
-  /* Modifier la largeur de l'image pour qu'elle s'ajuste automatiquement */
   cursor: default;
-  /* Pour faire ressortir le côté "cliquable" au survol des buttons. */
   object-fit: cover;
-  /* Redimensionner et couper l'image pour s'adapter au conteneur */
 }
 
 .caroussel .image-wrapper .button-left,
@@ -90,46 +80,69 @@
   color: #ff6060;
   font-size: 56px;
   margin-right: auto;
-  /* Place le titre h1 à l'extrême gauche */
+}
+
+.titre2 {
+  font-size: 2em;
+  color: #ff6060;
 }
 
 .text-container {
-  padding-top: 2em;
-  padding-right: 2em;
-  order: 1;
-  margin-right: 0px;
   color: #FF6060;
   font-size: 1.8em;
-  /* width: 115px; */
+  padding-right: 2em;
 }
 
 .profile-pic-container {
-  order: 2;
-  padding-right: 17em;
-  padding-top: 2em;
+  padding-right: 1em;
 }
 
 .tag-zone {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .note-container {
+  display: flex;
+  align-items: center;
   margin-left: auto;
-  /* Mettre Note à droite */
 }
 
-h2.titre2 {
-  font-size: 2em;
-  color: #ff6060;
-}
-
-.content-wrapper .tag-zone {
-  padding-top: 1em;
-}
 .content-wrapper .title-wrapper {
   padding-top: 1em;
   padding-left: 7em;
+  padding-right: 7em;
+}
+.content-wrapper .titles-and-host-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%; /* Limiter la largeur maximale */
+}
+.content-wrapper .titles {
+  flex: 1;
+  line-height: 2em;
+}
+.content-wrapper .host-info {
+  display: flex;
+  align-items: center;
+  max-width: 30%; /* Limiter la largeur maximale */
+  flex-wrap: wrap;
+}
+.content-wrapper .text-and-pic {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 8em;
+}
+.content-wrapper .tag-and-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  max-width: 100%; /* Limiter la largeur maximale */
 }
 .content-wrapper .caroussel {
   display: flex;
@@ -137,12 +150,11 @@ h2.titre2 {
   justify-content: center;
   align-items: center;
 }
-.content-wrapper .caroussel .image-wrapper .caroussel .image-wrapper img {
-  height: 230%;
+.content-wrapper .caroussel .image-wrapper img {
+  height: 100%;
   object-fit: cover;
 }
-.content-wrapper .caroussel .image-wrapper .image-number {
-  cursor: default;
+.content-wrapper .caroussel .image-number {
   position: absolute;
   padding-bottom: 0em;
   left: 50%;
@@ -156,10 +168,6 @@ h2.titre2 {
   background: #ff6060;
   border-radius: 2em;
   height: 25px;
-}
-.content-wrapper .tag-zone {
-  display: flex;
-  flex-wrap: wrap;
 }
 .content-wrapper .tag-container {
   position: relative;
@@ -176,11 +184,8 @@ h2.titre2 {
 
 .collapse-container {
   flex: 0 0 50%;
-  /* Les éléments prennent chacun 50% de l'espace disponible */
   max-width: calc(50% - 10px);
-  /* 10px pour l'espace entre les éléments */
   margin-right: 10px;
-  /* Ajoutez de l'espace entre les éléments */
 }
 
 .dropdown-container.custom-dropdown-container {
@@ -200,6 +205,10 @@ h2.titre2 {
   .tag-title {
     font-size: 1.75em;
     text-align: center;
+  }
+  .titles {
+    flex: 1;
+    line-height: 1px;
   }
   .note-container {
     /* margin-left: auto; */
@@ -307,6 +316,11 @@ h2.titre2 {
     width: 93px;
   }
 }
+.content-wrapper .host-info {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1024px) {
   .note-container {
     margin-left: initial;

@@ -16,9 +16,7 @@
 
 .round-image-container {
   width: 192px;
-  /* 3 fois la largeur actuelle */
   height: 192px;
-  /* 3 fois la hauteur actuelle */
   background: #F6F6F6;
   border-radius: 50%;
   display: flex;
@@ -27,45 +25,27 @@
 
   .profile-image {
     width: 180px;
-    /* 3 fois la largeur actuelle */
     height: 180px;
-    /* 3 fois la hauteur actuelle */
     border-radius: 50%;
     object-fit: cover;
   }
 }
 
 .caroussel {
-
-  //display: flex;
-  //flex-wrap: wrap;
-  //justify-content: space-between;
-  //align-items: center;
   .button-left,
   .button-right {
-    padding: 3em; // Ajustez le padding selon vos besoins
-    /* Ajoutez d'autres styles CSS pour les boutons */
+    padding: 3em;
   }
 }
 
 .caroussel .image-wrapper {
-  //flex: 0 0 calc(33.333% - 10px); /* Pour 3 images par ligne avec un espacement de 10px entre elles */
   margin-bottom: 10px;
-  /* Espacement entre les lignes d'images */
 }
 
 .caroussel .image-wrapper img.img_1 {
   width: 100%;
-  /* Modifier la largeur de l'image pour qu'elle s'ajuste automatiquement */
   cursor: default;
-  /* Pour faire ressortir le côté "cliquable" au survol des buttons. */
   object-fit: cover;
-  /* Redimensionner et couper l'image pour s'adapter au conteneur */
-  //height: 100%; /* Ajuster la hauteur de l'image pour remplir le conteneur */
-  //position: relative; /* Ajouter une position relative pour positionner l'image */
-  //left: 50%; /* Centrer horizontalement l'image */
-  //transform: translateX(-50%); /* Ajuster la position horizontale de l'image */
-  //top: 50px; /* Ajouter un décalage vertical personnalisé */
 }
 
 .caroussel .image-wrapper .button-left,
@@ -109,48 +89,75 @@
   color: #ff6060;
   font-size: 56px;
   margin-right: auto;
-  /* Place le titre h1 à l'extrême gauche */
+}
+
+.titre2 {
+  font-size: 2em;
+  color: #ff6060;
 }
 
 .text-container {
-  padding-top: 2em;
-  padding-right: 2em;
-  order: 1;
-  margin-right: 0px;
   color: #FF6060;
   font-size: 1.8em;
-  /* width: 115px; */
+  padding-right: 2em;
 }
 
 .profile-pic-container {
-  order: 2;
-  padding-right: 17em;
-  padding-top: 2em;
+  padding-right: 1em;
 }
 
 .tag-zone {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .note-container {
+  display: flex;
+  align-items: center;
   margin-left: auto;
-  /* Mettre Note à droite */
-}
-
-h2.titre2 {
-  font-size: 2em;
-  color: #ff6060;
 }
 
 .content-wrapper {
-  .tag-zone {
-    padding-top: 1em;
-  }
-
   .title-wrapper {
     padding-top: 1em;
     padding-left: 7em;
+    padding-right: 7em;
+  }
+
+  .titles-and-host-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%; /* Limiter la largeur maximale */
+  }
+
+  .titles {
+    flex: 1;
+    line-height: 2em;
+  }
+
+  .host-info {
+    display: flex;
+    align-items: center;
+    max-width: 30%; /* Limiter la largeur maximale */
+    flex-wrap: wrap;
+  }
+
+  .text-and-pic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 8em;
+  }
+
+  .tag-and-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    max-width: 100%; /* Limiter la largeur maximale */
   }
 
   .caroussel {
@@ -159,25 +166,18 @@ h2.titre2 {
     justify-content: center;
     align-items: center;
 
-    .image-wrapper {
-      //padding-top: 0em;
-      //object-fit: cover;
-      //height: 0%;
+    .image-wrapper img {
+      height: 100%;
+      object-fit: cover;
+    }
 
-      .caroussel .image-wrapper img {
-        height: 230%;
-        object-fit: cover;
-      }
-
-      .image-number {
-        cursor: default;
-        position: absolute;
-        padding-bottom: 0em;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 2em;
-      }
+    .image-number {
+      position: absolute;
+      padding-bottom: 0em;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2em;
     }
   }
 
@@ -187,11 +187,6 @@ h2.titre2 {
     background: #ff6060;
     border-radius: 2em;
     height: 25px;
-  }
-
-  .tag-zone {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .tag-container {
@@ -204,19 +199,14 @@ h2.titre2 {
   }
 }
 
-// Ajoutez ces styles à la fin de votre fichier FicheLogement.scss
-
 .collapse-wrapper {
   display: flex;
 }
 
 .collapse-container {
   flex: 0 0 50%;
-  /* Les éléments prennent chacun 50% de l'espace disponible */
   max-width: calc(50% - 10px);
-  /* 10px pour l'espace entre les éléments */
   margin-right: 10px;
-  /* Ajoutez de l'espace entre les éléments */
 }
 
 .dropdown-container.custom-dropdown-container {
@@ -231,11 +221,15 @@ h2.titre2 {
   height: auto;
   margin-top: 3em;
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @include respond-to('mobile') {
   .tag-title {
     font-size: 1.75em;
     text-align: center;
+}
+.titles {
+  flex: 1;
+  line-height: 1px;
 }
 .note-container {
   /* margin-left: auto; */
@@ -355,9 +349,13 @@ h2.titre2 {
     width: 93px;
   }
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@include respond-to('tablet'){
-    .note-container {
-      margin-left: initial;
+.content-wrapper .host-info {
+  display: flex;
+  align-items: center;
+}
+
+@include respond-to('tablet') {
+  .note-container {
+    margin-left: initial;
   }
 }
