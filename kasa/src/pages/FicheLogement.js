@@ -28,11 +28,18 @@ const FicheLogement = () => {
       <div className="content-wrapper">
         <Caroussel images={logement.pictures}/>
         <div className="title-wrapper">
-          <div className="titles-and-host-info">
+          <div className="Titre_Description_Tags">
             <div className="titles">
               <h1 className="titre1">{logement.title}</h1>
               <h2 className="titre2">{logement.location}</h2>
             </div>
+            <div className='tag-zone'>
+              {logement.tags.map((tag, index) => (
+                <Tag key={index} title={tag} />
+              ))}
+            </div>
+          </div>
+          <div className="Profil_Note">
             <div className="host-info">
               <div className="text-and-pic">
                 <div className="text-container">
@@ -42,13 +49,6 @@ const FicheLogement = () => {
                   <RoundImage imageUrl={logement.host.picture} altText={logement.host.name} />
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="tag-and-note">
-            <div className='tag-zone'>
-              {logement.tags.map((tag, index) => (
-                <Tag key={index} title={tag} />
-              ))}
             </div>
             <div className='note-container'>
               <Note />

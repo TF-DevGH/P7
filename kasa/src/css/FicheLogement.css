@@ -9,13 +9,14 @@
 }
 
 .round-image-container {
-  width: 192px;
-  height: 192px;
-  background: #F6F6F6;
+  width: 64px;
+  height: 64px;
+  background: #C4C4C4;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10em;
 }
 .round-image-container .profile-image {
   width: 180px;
@@ -40,7 +41,7 @@
 }
 
 .caroussel .image-wrapper .button-left,
-.caroussel .image-wrapper .button-right {
+.caroussel .button-right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -91,10 +92,7 @@
   color: #FF6060;
   font-size: 1.8em;
   padding-right: 2em;
-}
-
-.profile-pic-container {
-  padding-right: 1em;
+  padding-top: 0em;
 }
 
 .tag-zone {
@@ -104,45 +102,46 @@
 }
 
 .note-container {
+  padding-top: 4em;
   display: flex;
   align-items: center;
   margin-left: auto;
+  padding-right: 7em;
 }
 
 .content-wrapper .title-wrapper {
-  padding-top: 1em;
-  padding-left: 7em;
-  padding-right: 7em;
-}
-.content-wrapper .titles-and-host-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 100%; /* Limiter la largeur maximale */
+  padding-top: 4em;
+  padding-left: 7em;
+  padding-right: 7em;
 }
-.content-wrapper .titles {
+.content-wrapper .Titre_Description_Tags {
   flex: 1;
-  line-height: 2em;
+  line-height: 4em;
+}
+.content-wrapper .Profil_Note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .content-wrapper .host-info {
   display: flex;
   align-items: center;
-  max-width: 30%; /* Limiter la largeur maximale */
   flex-wrap: wrap;
 }
 .content-wrapper .text-and-pic {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-right: 8em;
 }
 .content-wrapper .tag-and-note {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1em;
-  max-width: 100%; /* Limiter la largeur maximale */
+  max-width: 100%;
 }
 .content-wrapper .caroussel {
   display: flex;
@@ -211,7 +210,9 @@
     line-height: 1px;
   }
   .note-container {
-    /* margin-left: auto; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   .content-wrapper .tag-header {
     display: flex;
@@ -225,9 +226,8 @@
     width: 2.5em;
   }
   .profile-pic-container {
-    order: 2;
-    padding-right: 0em;
-    padding-top: 2em;
+    padding-top: 4em;
+    padding-right: 10em;
   }
   .collapse-wrapper {
     display: flex;
@@ -271,8 +271,12 @@
     padding: 16px;
   }
   .content-wrapper .title-wrapper {
-    padding-top: 0em;
-    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+    padding-left: 7em;
+    padding-right: 7em;
   }
   .host-info-wrapper {
     display: flex;
@@ -307,13 +311,10 @@
     color: #FF6060;
   }
   .text-container {
-    padding-top: 1.5em;
-    padding-right: 0em;
-    order: 1;
-    margin-right: 10px;
     color: #FF6060;
-    font-size: 1.25em;
-    width: 93px;
+    font-size: 1.8em;
+    padding-right: 2em;
+    padding-top: 2em;
   }
 }
 .content-wrapper .host-info {
