@@ -229,15 +229,36 @@
 
 
 @include respond-to('mobile') {
+  .content-wrapper .Profil_Note {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-right: 0em;
+}
+  .note-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0em;
+}
+  .tag-zone {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 1em;
+}
   .tag-title {
     font-size: 1.75em;
     text-align: center;
   }
 
   .titles {
-    flex: 1;
-    line-height: 1px;
-  }
+    flex: 1 1;
+    line-height: 32px;
+    padding-left: 1em;
+}
 
   .note-container {
     display: flex;
@@ -258,10 +279,11 @@
     width: 2.5em;
   }
 
-  .profile-pic-container {
-    padding-top: 4em;
-    padding-right: 0;
-  }
+  
+    .profile-pic-container {
+        padding-top: 0em;
+        padding-right: 0;
+    }
 
   .collapse-wrapper {
     display: flex;
@@ -312,13 +334,14 @@
 
   .content-wrapper .title-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4em;
-    padding-left: 1em;
-    padding-right: 1em;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 0em;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 100%;
-  }
+    margin: 0 auto;
+}
 
   .host-info-wrapper {
     display: flex;
@@ -328,7 +351,7 @@
 
   .titre1 {
     color: #ff6060;
-    font-size: 18px;
+    font-size: 2em;
     margin-right: auto;
     padding-left: 0px;
   }
@@ -342,13 +365,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 4em;
+    padding-top: 0em;
     padding-left: 0%;
-    padding-right: 11%;
+    padding-right: 0%;
     width: 100%;
     margin: 0 auto;
 }
-
   .content-wrapper .tag-container {
     position: relative;
     z-index: 2;
@@ -367,16 +389,21 @@
   .text-container {
     color: #FF6060;
     font-size: 1.8em;
-    padding-right: 2em;
-    padding-top: 2em;
-  }
+    right: 2em;
+    padding-top: 0em;
+    padding-right: 0em;
+}
 }
 
 .content-wrapper .host-info {
   display: flex;
   align-items: center;
 }
-
+.note-container {
+  margin-left: initial;
+  height: 0em;
+  margin-left: 0em;
+}
 @include respond-to('tablet') {
   .note-container {
     margin-left: initial;
