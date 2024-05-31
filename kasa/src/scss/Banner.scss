@@ -12,21 +12,20 @@
     font-family: 'Montserrat Light', sans-serif;
 }
 
-//Mettre les styles pour desktop ici :
+// Styles pour desktop
 .HomeBanner {
     position: relative;
     width: calc(100% - 170px); // Ajustez la largeur en fonction de la largeur du header et de la marge
-    height: 32em; // Ajustez la hauteur selon vos besoins
+    height: 34em; // Augmenté pour correspondre au nouveau header
     border-radius: 25px;
     overflow: hidden;
     padding-left: 100px;
-    /* Ajout de padding pour centrer le contenu */
     padding-top: 100px;
 }
 
 .HomeBannerImage {
     width: 100%;
-    height: 100%; // Ajustez la hauteur de l'image selon vos besoins
+    height: 100%;
     object-fit: cover;
     filter: brightness(0.7);
     border-radius: 25px;
@@ -35,14 +34,11 @@
 .content {
     position: absolute;
     top: 65%;
-    /* Ajustez cette valeur pour déplacer le texte verticalement */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    /* Centrez le texte horizontalement */
     color: white;
 }
-
 
 .content h2 {
     font-family: 'Montserrat Light', sans-serif;
@@ -65,7 +61,7 @@
     .HomeBanner {
         position: relative;
         width: 96%;
-        height: 111px;
+        height: 120px; // Augmenté pour correspondre au nouveau header
         border-radius: 9px;
         overflow: hidden;
         padding-left: 16px;
@@ -73,7 +69,7 @@
     }
     .HomeBannerImage {
         width: 100%;
-        height: 100%; // Ajustez la hauteur de l'image selon vos besoins
+        height: 100%;
         object-fit: cover;
         filter: brightness(0.7);
         border-radius: 10px;
@@ -82,7 +78,7 @@
     .AboutBanner {
         position: relative;
         width: 95%;
-        height: 20em;
+        height: 22em; // Augmenté pour correspondre au nouveau header
         border-radius: 0px;
         overflow: hidden;
         padding-left: 22px;
@@ -90,7 +86,7 @@
     }
     .AboutBannerImage {
         width: 100%;
-        height: 100%; // Ajustez la hauteur de l'image selon vos besoins
+        height: 100%;
         object-fit: cover;
         filter: brightness(0.7);
         border-radius: 10px;

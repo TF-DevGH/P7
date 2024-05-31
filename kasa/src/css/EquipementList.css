@@ -15,25 +15,25 @@
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 3em;
-  padding-right: 14em;
+  /* padding-right: 14em; */
 }
 
 .equipement-header {
-  background-color: #FF6060;
-  color: #f5f5f5;
-  padding: 0.5em 1em;
+  padding: 2em;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  height: 47px;
   align-items: center;
+  justify-content: space-between;
+  background: #FF6060;
   border-radius: 5px;
-  height: 53px;
+  color: white;
 }
 
 .menu-title {
-  font-size: 1.5em;
+  font-size: 1.75em;
   background-color: #FF6060;
-  padding: 0.5em 1em;
+  padding: 0em 0em;
   border-radius: 5px;
   cursor: pointer;
 }

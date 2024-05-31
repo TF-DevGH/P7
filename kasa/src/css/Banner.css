@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Montserrat Light";
   src: url("../fonts/Montserrat-Light.otf") format("opentype");
@@ -12,11 +11,10 @@
 .HomeBanner {
   position: relative;
   width: calc(100% - 170px);
-  height: 32em;
+  height: 34em;
   border-radius: 25px;
   overflow: hidden;
   padding-left: 100px;
-  /* Ajout de padding pour centrer le contenu */
   padding-top: 100px;
 }
 
@@ -31,11 +29,9 @@
 .content {
   position: absolute;
   top: 65%;
-  /* Ajustez cette valeur pour déplacer le texte verticalement */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* Centrez le texte horizontalement */
   color: white;
 }
 
@@ -60,7 +56,7 @@
   .HomeBanner {
     position: relative;
     width: 96%;
-    height: 111px;
+    height: 120px;
     border-radius: 9px;
     overflow: hidden;
     padding-left: 16px;
@@ -76,7 +72,7 @@
   .AboutBanner {
     position: relative;
     width: 95%;
-    height: 20em;
+    height: 22em;
     border-radius: 0px;
     overflow: hidden;
     padding-left: 22px;

@@ -6,7 +6,7 @@
 .AboutBanner {
     position: relative;
     width: calc(100% - 170px);
-    height: 32em;
+    height: 34em; // Augmenté pour correspondre au nouveau header
     border-radius: 25px;
     overflow: hidden;
     padding-left: 100px;
@@ -58,6 +58,7 @@
     width: 100%;
     padding: 0em 1em;
 }
+
 @include respond-to('mobile') {
     .gallery {
         padding: 0px;
@@ -74,7 +75,6 @@
     .card_title {
         font-size: 20px;
         bottom: 0em;
-        /* background-color: rgba(0, 0, 0, 0.5); */
         width: calc(100% - 2em);
         padding: 0.5em;
         border-radius: 0 0 1.5em 1.5em;
@@ -91,7 +91,7 @@
     }
     .HomeBannerImage {
         width: 100%;
-        height: 100%; // Ajustez la hauteur de l'image selon vos besoins
+        height: 100%;
         object-fit: cover;
         filter: brightness(0.7);
         border-radius: 15px;
@@ -100,7 +100,7 @@
     .AboutBanner {
         position: relative;
         width: 95%;
-        height: 20em;
+        height: 22em; // Augmenté pour correspondre au nouveau header
         border-radius: 0px;
         overflow: hidden;
         padding-left: 16px;
@@ -108,7 +108,7 @@
     }
     .AboutBannerImage {
         width: 100%;
-        height: 100%; // Ajustez la hauteur de l'image selon vos besoins
+        height: 100%;
         object-fit: cover;
         filter: brightness(0.7);
         border-radius: 12px;
