@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-@import '_variables.scss'; // Assurez-vous que le chemin d'importation est correct
+@import '_variables.scss';
 @import '_mixins.scss';
 
 * {
@@ -15,12 +15,11 @@
 // Styles pour desktop
 .HomeBanner {
     position: relative;
-    width: calc(100% - 170px); // Ajustez la largeur en fonction de la largeur du header et de la marge
-    height: 34em; // Augmenté pour correspondre au nouveau header
+    width: 100%;
+    height: 32vh; // Utilisation de vh pour hauteur relative à la fenêtre
     border-radius: 25px;
     overflow: hidden;
-    padding-left: 100px;
-    padding-top: 100px;
+    padding: 2vw; // Padding en vw pour adaptation fluide
 }
 
 .HomeBannerImage {
@@ -33,7 +32,7 @@
 
 .content {
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -42,53 +41,26 @@
 
 .content h2 {
     font-family: 'Montserrat Light', sans-serif;
-    font-size: 4em;
+    font-size: 4vw; // Utilisation de vw pour une taille de texte relative
     font-weight: 500;
-    line-height: 68px;
-    letter-spacing: 0em;
     margin: 0;
 }
 
 @include respond-to('mobile') {
     .content h2 {
-        font-size: 2em;
-        font-weight: 500;
-        line-height: 250px;
-        height: 5.5em;
-        width: 10em;
-        margin: 0;
+        font-size: 6vw; // Ajustement pour mobile
     }
     .HomeBanner {
-        position: relative;
-        width: 96%;
-        height: 120px; // Augmenté pour correspondre au nouveau header
-        border-radius: 9px;
-        overflow: hidden;
-        padding-left: 16px;
-        padding-top: 0em;
+        padding: 5vw; // Augmentation du padding pour mobile
     }
     .HomeBannerImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.7);
         border-radius: 10px;
     }
-
     .AboutBanner {
-        position: relative;
-        width: 95%;
-        height: 22em; // Augmenté pour correspondre au nouveau header
-        border-radius: 0px;
-        overflow: hidden;
-        padding-left: 22px;
-        padding-top: 0px;
+        height: 50vh; // Utilisation de vh pour hauteur relative à la fenêtre
+        padding: 5vw; // Padding en vw pour adaptation fluide
     }
     .AboutBannerImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.7);
         border-radius: 10px;
     }
 }

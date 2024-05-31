@@ -9,38 +9,39 @@
 @import '_mixins.scss';
 
 .D404 {
-    width: 1500px;
-    height: 1024px;
+    /* width: 1500px; */
+    /* height: 1024px; */
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 66em;
+    /* padding-left: 50%; */
 }
 
 .Element404 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4em;
+    padding-top: 10vw;
 }
 
 .Text {
-    font-family: 'Montserrat Light';
+    font-family: "Montserrat Light";
     font-size: 18px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 80px;
     letter-spacing: 0em;
     text-align: center;
     color: #FF6060;
+    padding: 4px;
 }
 
 .notFoundText {
     font-size: 28em;
     font-weight: 700;
     line-height: 434px;
-    padding-bottom: 0.15em;
+    /* padding-bottom: 0.15em; */
 }
 
 .errorMessage-container,
@@ -55,18 +56,17 @@
 .errorMessage {
     margin-top: 0px;
     font-size: 3em;
-    width: 30em;
+    /* width: 30em; */
     padding-bottom: 4em;
 }
 
 .returnText {
     margin-top: 50px;
     font-size: 2em;
-    width: 15.3em;
-    margin-bottom: 3em;
+    width: 16.3em;
+    margin-bottom: 10em;
     padding-bottom: 2px;
     position: relative;
-    /* Ajout de la position relative */
     cursor: pointer;
 }
 

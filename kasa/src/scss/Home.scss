@@ -1,16 +1,13 @@
-// Home.scss
-
-@import '_variables.scss'; // Assurez-vous que le chemin d'importation est correct
+@import '_variables.scss';
 @import '_mixins.scss';
 
 .AboutBanner {
     position: relative;
-    width: calc(100% - 170px);
-    height: 34em; // Augmenté pour correspondre au nouveau header
+    width: 100%;
+    height: 32vh; // Utilisation de vh pour hauteur relative à la fenêtre
     border-radius: 25px;
     overflow: hidden;
-    padding-left: 100px;
-    padding-top: 100px;
+    padding: 2vw; // Padding en vw pour adaptation fluide
 }
 
 .AboutBannerImage {
@@ -23,94 +20,67 @@
 
 .content {
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: $white; // Utilisation de la variable définie
+    color: $white;
 }
 
 .content h2 {
-    font-size: 5em;
+    font-size: 5vw; // Utilisation de vw pour une taille de texte relative
+    width: max-content;
     font-weight: 500;
-    line-height: 250px;
-    height: 3.5em;
-    width: 16em;
     margin: 0;
 }
 
 .gallery {
-    padding: 0px;
-    margin: 6em 170px 6em 6em;
+    padding: 2vw;
+    margin: 2vw;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: $light-gray; // Utilisation de la variable définie
+    background-color: $light-gray;
     border-radius: 1.5em;
     overflow: hidden;
-    padding-bottom: 1em;
 }
 
 .gallery-row {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0em 1em;
+    padding: 1vw;
 }
 
 @include respond-to('mobile') {
     .gallery {
-        padding: 0px;
-        margin: 0em 0px 0em 0em;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        padding: 5vw;
+        margin: 0;
         background-color: white;
         border-radius: 1.5em;
-        overflow: hidden;
-        padding-bottom: 0em;
     }
     .card_title {
-        font-size: 20px;
-        bottom: 0em;
+        font-size: 5vw; // Utilisation de vw pour une taille de texte relative
+        bottom: 0;
         width: calc(100% - 2em);
         padding: 0.5em;
         border-radius: 0 0 1.5em 1.5em;
     }
     .content h2 {
         text-align: start;
-        font-size: 1.7em;
-        font-weight: 500;
-        line-height: 30px;
-        height: 3em;
-        width: 10em;
-        margin: 0px;
+        font-size: 4vw; // Utilisation de vw pour une taille de texte relative
+        margin: 0;
         padding-right: 1em;
     }
     .HomeBannerImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.7);
         border-radius: 15px;
     }
-
     .AboutBanner {
-        position: relative;
-        width: 95%;
-        height: 22em; // Augmenté pour correspondre au nouveau header
-        border-radius: 0px;
-        overflow: hidden;
-        padding-left: 16px;
-        padding-top: 0px;
+        height: 50vh; // Utilisation de vh pour hauteur relative à la fenêtre
+        padding: 5vw; // Padding en vw pour adaptation fluide
     }
     .AboutBannerImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.7);
         border-radius: 12px;
     }
 }
