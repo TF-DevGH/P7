@@ -120,7 +120,7 @@
   .returnText {
     /* margin-top: 58px; */
     font-size: 14px;
-    width: 15.3em;
+    width: 17.3em;
     /* margin-bottom: 0em; */
     /* padding-bottom: 180px; */
     position: relative;
@@ -156,7 +156,7 @@
   .errorMessage {
     margin-top: 0px;
     font-size: 18px;
-    width: 12em;
+    width: 90%;
     height: 110px;
   }
 }

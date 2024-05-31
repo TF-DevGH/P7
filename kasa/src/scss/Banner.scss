@@ -20,6 +20,7 @@
     border-radius: 25px;
     overflow: hidden;
     padding: 2vw; // Padding en vw pour adaptation fluide
+    margin-top: 2em;
 }
 
 .HomeBannerImage {
@@ -48,15 +49,27 @@
 
 @include respond-to('mobile') {
     .content h2 {
-        font-size: 6vw; // Ajustement pour mobile
+        text-align: start;
+        font-size: 6vw;
+        margin: 0;
+        width: 12em;
+        padding-right: 1em;
     }
+
     .HomeBanner {
-        padding: 5vw; // Augmentation du padding pour mobile
+        padding: 9vw;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        position: relative;
+        width: 100%;
+        height: 11vh;
     }
     .HomeBannerImage {
         border-radius: 10px;
     }
     .AboutBanner {
+        padding-top: 0vw;
+        padding-bottom: 0vw;
         height: 50vh; // Utilisation de vh pour hauteur relative à la fenêtre
         padding: 5vw; // Padding en vw pour adaptation fluide
     }

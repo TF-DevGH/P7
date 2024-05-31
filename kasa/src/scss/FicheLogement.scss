@@ -214,18 +214,17 @@
   max-width: calc(50% - 10px);
   margin-right: 10px;
 }
-
 .dropdown-container.custom-dropdown-container {
-    width: 90%;
-    right: 0;
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0px;
-    overflow: hidden;
-    height: auto;
-    margin-top: 3em;
+  width: 90%;
+  right: 0;
+  position: relative;
+  bottom: 0;
+  left: 52%;
+  transform: translateX(-50%);
+  padding: 0px;
+  overflow: hidden;
+  height: auto;
+  margin-top: 3em;
 }
 
 

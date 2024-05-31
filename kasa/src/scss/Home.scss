@@ -7,7 +7,7 @@
     height: 32vh; // Utilisation de vh pour hauteur relative à la fenêtre
     border-radius: 25px;
     overflow: hidden;
-    padding: 2vw; // Padding en vw pour adaptation fluide
+    padding: 0vw; // Padding en vw pour adaptation fluide
 }
 
 .AboutBannerImage {
@@ -69,9 +69,10 @@
     }
     .content h2 {
         text-align: start;
-        font-size: 4vw; // Utilisation de vw pour une taille de texte relative
+        font-size: 6vw;
         margin: 0;
         padding-right: 1em;
+        width: 12em;
     }
     .HomeBannerImage {
         border-radius: 15px;
@@ -82,5 +83,17 @@
     }
     .AboutBannerImage {
         border-radius: 12px;
+    }
+    .dropdown-container.custom-dropdown-container {
+        width: 90%;
+        right: 0;
+        position: relative;
+        bottom: 0;
+        left: 52%;
+        transform: translateX(-50%);
+        padding: 0px;
+        overflow: hidden;
+        height: auto;
+        margin-top: 3em;
     }
 }

@@ -1,11 +1,24 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import '_variables.scss';
+@import '_mixins.scss';
+
+
 .AboutBanner {
     position: relative;
-    width: calc(100% - 170px);
-    height: 32em;
+    width: 100%;
+    height: 18em;
     border-radius: 25px;
+    margin-top: 1em;
     overflow: hidden;
-    padding-left: 100px;
-    padding-top: 100px;
+    padding: 0vw;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .AboutBannerImage{
     width: 100%;
@@ -14,11 +27,13 @@
     filter: brightness(0.7);
     border-radius: 25px;
 }
-
+.ContainerMenuDepliant {
+    padding-bottom: 0px;
+}
 .footer {
     width: 100%;
     margin-top: 389px;
-    height: 17em;
+    height: 18em;
     position: relative;
     background-color: #000000;
 }
@@ -27,7 +42,7 @@
     padding-top: 0.5em;
     width: 35em;
     height: 46px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat Light', sans-serif;
     font-size: 2.5em;
     font-weight: 500;
     line-height: 34px;
@@ -58,4 +73,21 @@
     background: #FF6060;
     cursor: pointer;
     position: relative;
+}
+@include respond-to('mobile') {
+    .AboutBanner {
+        position: relative;
+        width: 100%;
+        height: 18em;
+        border-radius: 25px;
+        overflow: hidden;
+        padding: 0vw;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .AboutBanner {
+        /* height: 50vh; */
+        /* padding: 0vw; */
+    }
+
 }
