@@ -316,8 +316,8 @@
     max-width: 100%;
     flex: 0 0 50%;
     width: 100%;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 0em;
+    padding-left: 0em;
   }
   .dropdown-container.custom-dropdown-container {
     width: 90%;
