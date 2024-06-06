@@ -12,8 +12,6 @@
   width: auto; /* Ajustez la largeur automatiquement en fonction du contenu */
   height: auto; /* Ajustez la hauteur automatiquement en fonction du contenu */
   padding-right: 0em;
-  position: relative;
-  right: 0; /* Fixer à droite */
 }
 
 .star_full {
@@ -31,10 +29,9 @@
 @media (max-width: 767.98px) {
   .star-container {
     justify-content: flex-start; /* Alignez les étoiles à gauche pour mobile */
-    padding-left: 0; /* Annule la marge à gauche */
-    position: absolute; /* Fixe la position */
-    left: 0; /* Aligne à gauche */
-    margin-left: 1em; /* Ajoute de l'espace à gauche */
+    padding-left: 0em; /* Ajoutez du padding à gauche pour un espace */
+    padding-right: 0; /* Annule la marge à droite */
+    width: 100%; /* Prendre toute la largeur disponible */
   }
 }
 

@@ -119,7 +119,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end; /* Alignez les étoiles à droite */
-  padding-top: 11em;
+  padding-top: 0em;
   width: 100%; /* Prendre toute la largeur disponible */
   position: relative; /* Position relative pour le parent */
 }
@@ -131,7 +131,7 @@
     align-items: flex-start;
     padding-top: 4em;
     padding-left: 3%;
-    padding-right: 1%;
+    padding-right: 3%;
     width: 100%;
     margin: 0 auto;
     position: relative; /* Ajouté pour permettre la position absolue des enfants */
