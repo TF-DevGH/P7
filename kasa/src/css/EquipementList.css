@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat Light";
   src: url("../fonts/Montserrat-Light.otf") format("opentype");
@@ -19,10 +20,10 @@
 }
 
 .equipement-header {
-  padding: 2em;
+  padding: 2.5em; /* Ajusté pour correspondre au padding de Collapse */
   cursor: pointer;
   display: flex;
-  height: 47px;
+  height: 30px; /* Ajusté pour correspondre à Collapse */
   align-items: center;
   justify-content: space-between;
   background: #FF6060;
@@ -49,9 +50,12 @@
 }
 
 .equipement-content {
-  background-color: #F6F6F6;
-  border-radius: 0 0 10px 10px;
-  overflow: hidden;
+  background-color: #F6F6F6; /* Ajusté pour correspondre à Collapse */
+  border-bottom-right-radius: 10px; /* Ajusté pour correspondre à Collapse */
+  border-bottom-left-radius: 10px; /* Ajusté pour correspondre à Collapse */
+  font-size: 1em; /* Ajusté pour correspondre à Collapse */
+  line-height: 1.5em; /* Ajusté pour correspondre à Collapse */
+  overflow: hidden; /* Ajusté pour correspondre à Collapse */
   transition: height 0.3s ease;
   padding: 1em;
 }
@@ -75,12 +79,17 @@
 }
 
 @media (max-width: 767.98px) {
-  /*
-  "element.style"{
-      width: 64px;
-      height: 64px;
+  .equipement-header {
+    padding: 1.25em; /* Ajusté pour correspondre au padding de Collapse */
+    cursor: pointer;
+    display: flex;
+    height: 30px; /* Ajusté pour correspondre à Collapse */
+    align-items: center;
+    justify-content: space-between;
+    background: #FF6060;
+    border-radius: 5px;
+    color: white;
   }
-  */
   .round-image-container .profile-image {
     width: 64px;
     height: 64px;
@@ -94,13 +103,20 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .note-container {
+    margin-left: initial;
+    height: 0em;
+    margin-left: 0em;
+  }
   .equipement-list-container {
     position: relative;
     z-index: 2;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 0em;
+    left: 50%;
+    transform: translateX(-50%);
     /* padding-right: 14em; */
   }
 }
