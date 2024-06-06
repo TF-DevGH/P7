@@ -85,10 +85,12 @@
   align-items: center;
   padding-top: 4em;
 }
+
 .titles {
   width: 70%;
   line-height: 5em;
 }
+
 .titre1 {
   color: #ff6060;
   font-size: 3vw; /* Adjusted for responsiveness */
@@ -116,8 +118,10 @@
 .note-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Alignez les étoiles à droite */
   padding-top: 11em;
+  width: 100%; /* Prendre toute la largeur disponible */
+  position: relative; /* Position relative pour le parent */
 }
 
 .content-wrapper {
@@ -130,6 +134,7 @@
     padding-right: 1%;
     width: 100%;
     margin: 0 auto;
+    position: relative; /* Ajouté pour permettre la position absolue des enfants */
   }
 
   .Titre_Description_Tags {
@@ -143,7 +148,6 @@
     align-items: flex-end;
     justify-content: space-between;
     max-width: 25%;
-    padding-right: 2em;
   }
 
   .host-info {
@@ -214,6 +218,7 @@
   max-width: calc(50% - 10px);
   margin-right: 10px;
 }
+
 .dropdown-container.custom-dropdown-container {
   width: 90%;
   right: 0;
@@ -227,28 +232,77 @@
   margin-top: 3em;
 }
 
-
 @include respond-to('mobile') {
-  .content-wrapper .Profil_Note {
+  .content-wrapper .Titre_Description_Tags {
+    flex: 1 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    max-width: 100%;
+    line-height: 0.5em;
+    padding-top: 0em;
+  }
+
+      .content-wrapper .Profil_Note {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 3.5em;
+        padding-top: 0em;
+        padding-right: 0em;
+        height: 0px;
+    }
+
+  .round-image-container {
+    width: 64px;
+    height: 64px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0em;
+  }
+
+  .star-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alignez les étoiles à gauche */
+    width: auto;
+    height: auto;
     padding-right: 0em;
-}
+    padding-left: 1em; /* Ajoutez du padding à gauche pour un espace */
+    position: absolute; /* Fixe la position */
+    left: 0; /* Aligne à gauche */
+    margin-left: 1em; /* Ajoute de l'espace à gauche */
+  }
+
+  .content-wrapper .text-and-pic {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: initial;
+  }
+
   .note-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start; /* Alignez les étoiles à gauche */
     padding-top: 0em;
-}
+    width: 100%; /* Prendre toute la largeur disponible */
+    position: absolute; /* Fixe la position */
+    left: 0; /* Aligne à gauche */
+    margin-left: 1em; /* Ajoute de l'espace à gauche */
+  }
+
   .tag-zone {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-wrap: nowrap;
     padding-left: 1em;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    padding-bottom: 8em;
 }
+
   .tag-title {
     font-size: 1.75em;
     text-align: center;
@@ -256,14 +310,10 @@
 
   .titles {
     flex: 1 1;
-    line-height: 32px;
-    padding-left: 1em;
-}
-
-  .note-container {
-    display: flex;
-    justify-content: center;
+    line-height: 2em;
     width: 100%;
+    padding-left: 1em;
+    padding-top: 1em;
   }
 
   .content-wrapper .tag-header {
@@ -272,18 +322,23 @@
     background: #ff6060;
     border-radius: 1em;
     height: 25px;
+    font-size: 5px;
   }
 
   .star {
-    padding: 0.5em;
-    width: 2.5em;
+    padding: 2px;
+    font-size: 1em;
+    width: 25px;
+    height: 2em;
+    padding-right: 0px;
+    margin-top: -9em;
+    margin-left: 6px;
   }
 
-  
-    .profile-pic-container {
-        padding-top: 0em;
-        padding-right: 0;
-    }
+  .profile-pic-container {
+    padding-top: 0em;
+    padding-right: 0em;
+  }
 
   .collapse-wrapper {
     display: flex;
@@ -334,14 +389,14 @@
 
   .content-wrapper .title-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: unset;
     align-items: flex-start;
     padding-top: 0em;
     padding-left: 0%;
     padding-right: 0%;
     width: 100%;
     margin: 0 auto;
-}
+  }
 
   .host-info-wrapper {
     display: flex;
@@ -351,7 +406,9 @@
 
   .titre1 {
     color: #ff6060;
-    font-size: 2em;
+    font-size: 1.45em;
+    line-height: 1.5em;
+    max-width: 18em;
     margin-right: auto;
     padding-left: 0px;
   }
@@ -363,14 +420,15 @@
 
   .content-wrapper .title-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: normal;
+    align-items: self-end;
     padding-top: 0em;
     padding-left: 0%;
     padding-right: 0%;
     width: 100%;
     margin: 0 auto;
-}
+  }
+
   .content-wrapper .tag-container {
     position: relative;
     z-index: 2;
@@ -388,22 +446,29 @@
 
   .text-container {
     color: #FF6060;
-    font-size: 1.8em;
+    font-size: 1em;
     right: 2em;
-    padding-top: 0em;
-    padding-right: 0em;
-}
+    padding-top: 1em;
+    padding-right: 0.25em;
+    margin-left: 0em;
+  }
 }
 
 .content-wrapper .host-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-bottom: 0em;
+  margin-right: 1em;
+  margin-bottom: 10em;
 }
+
 .note-container {
   margin-left: initial;
   height: 0em;
   margin-left: 0em;
 }
+
 @include respond-to('tablet') {
   .note-container {
     margin-left: initial;

@@ -3,40 +3,41 @@
     src: url('../fonts/Montserrat-Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  @import '_variables.scss';
-  @import '_mixins.scss';
+}
+
+@import '_variables.scss';
+@import '_mixins.scss';
 
 // Note.scss
 .star-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Alignez les étoiles à droite */
+    justify-content: flex-end; /* Alignez les étoiles à droite par défaut */
     width: auto; /* Ajustez la largeur automatiquement en fonction du contenu */
     height: auto; /* Ajustez la hauteur automatiquement en fonction du contenu */
     padding-right: 0em;
+    position: relative;
+    right: 0; /* Fixer à droite */
 }
 
-.star_full{
-    width: 99px; // 24.75px * 4
-    height: 96px; // 24px * 4
-    margin-left: 16px; /* Ajoutez une marge à gauche pour séparer les étoiles */
+.star_full {
+    width: 24.75px; /* Ajustez la taille des étoiles */
+    height: 24px; /* Ajustez la taille des étoiles */
+    margin-right: 8px; /* Ajoutez une marge à droite pour séparer les étoiles */
 }
 
-.star_empty{
-    width: 99px; // 24.75px * 4
-    height: 96px; // 24px * 4
-    margin-left: 16px; /* Ajoutez une marge à gauche pour séparer les étoiles */
+.star_empty {
+    width: 24.75px; /* Ajustez la taille des étoiles */
+    height: 24px; /* Ajustez la taille des étoiles */
+    margin-right: 8px; /* Ajoutez une marge à droite pour séparer les étoiles */
 }
 
 @include respond-to('mobile') {
     .star-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: auto;
-        height: auto;
-        padding-right: 4.5em;
+        justify-content: flex-start; /* Alignez les étoiles à gauche pour mobile */
+        padding-left: 0; /* Annule la marge à gauche */
+        position: absolute; /* Fixe la position */
+        left: 0; /* Aligne à gauche */
+        margin-left: 1em; /* Ajoute de l'espace à gauche */
     }
 }
