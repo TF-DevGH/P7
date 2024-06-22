@@ -34,9 +34,6 @@
     justify-content: space-between; /* Espacement des éléments */
     align-items: center;
   }
-  .menu {
-    right: 16px;
-  }
   .menu-item {
     cursor: pointer;
     color: #FF6060;
