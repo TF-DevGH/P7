@@ -48,31 +48,46 @@
 }
 
 @include respond-to('mobile') {
-    .content h2 {
-        text-align: start;
-        font-size: 6vw;
-        margin: 0;
-        width: 12em;
-        padding-right: 1em;
+    .HomeBanner {
+        padding: 0;
+        position: relative;
+        width: calc(100% - 2em); // Ajustement de la largeur pour correspondre au header
+        margin: 0 auto; // Centrer la bannière sur mobile
+        height: 11vh; // Ajustement de la hauteur pour mobile
+        margin-top: 2em; // Ajouter une marge supérieure pour éviter le chevauchement
+        border-radius: 1em; //>.BORDER-RADIUS EFFECTIF.<
     }
 
-    .HomeBanner {
-        padding: 9vw;
-        padding-top: 0em;
-        padding-bottom: 0em;
-        position: relative;
-        width: 100%;
-        height: 11vh;
-    }
     .HomeBannerImage {
         border-radius: 10px;
+        width: 100%; // S'assurer que l'image prend toute la largeur du conteneur
+        height: 100%; // S'assurer que l'image prend toute la hauteur du conteneur
+        object-fit: cover; // S'assurer que l'image s'adapte bien au conteneur
     }
+
+    .content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 0 1em; // Ajout d'un padding pour éviter que le texte ne touche les bords
+    }
+
+    .content h2 {
+        text-align: center; // Centrer le texte pour mobile
+        font-size: 6vw; // Utilisation de vw pour une taille de texte relative
+        margin: 0;
+        width: auto; // Ajustement de la largeur pour mobile
+        padding-right: 0; // Retirer le padding pour mobile
+    }
+
     .AboutBanner {
         padding-top: 0vw;
         padding-bottom: 0vw;
         height: 50vh; // Utilisation de vh pour hauteur relative à la fenêtre
         padding: 5vw; // Padding en vw pour adaptation fluide
     }
+    
     .AboutBannerImage {
         border-radius: 10px;
     }

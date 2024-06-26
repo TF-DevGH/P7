@@ -30,8 +30,8 @@ header {
         align-items: center;
 
         .header-logo {
-            width: 25vw; /* Utilisation de vw pour une largeur relative */
-            height: 8vh; /* Utilisation de vh pour une hauteur relative */
+            width: 0vw; /* Utilisation de vw pour une largeur relative */
+            //height: auto; /* Utilisation de vh pour une hauteur relative */
             top: 5vh; /* Utilisation de vh pour une position relative */
             left: 5vw; /* Utilisation de vw pour une position relative */
 
@@ -132,9 +132,9 @@ header {
 }
 */
 /*Nouvelles MODIFICATIONS ICI :*/
-.menu{
-    right:0px;
-    /*position: sticky;*/
+.menu {
+    right: 0px;
+    /* position: sticky; */
     display: flex;
     position: absolute;
     top: 50%;
@@ -162,16 +162,23 @@ header {
     margin-left: 2.5vw;
     margin-right: 0vw;
 }
+//NEW :
 header nav {
     width: auto;
-    padding-top: 3vh;
-    padding-right: 6vw;
-}
-header .container {
-    display: flex;
-    justify-content: space-between;
+    flex-flow: column;
     align-items: center;
-    padding-bottom: 0em;
+    flex-direction: row;
+    /* justify-items: baseline; */
+    padding-top: 2vh;
+    padding-right: 4vw; //5vw;
+}//NEW :
+header .container {
+    display: block;
+    justify-content: normal;
+    align-items: center;
+    height: auto;
+    padding-bottom: 0;
+    align-items: center;
 }
 /*FIN NOUVELLES MODIFICATIONS*/
 main{
@@ -220,7 +227,7 @@ main{
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        padding: 0em 1em;
+        /* padding: 0em 1em; */
     }
 }
 @include respond-to('mobile') {

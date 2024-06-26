@@ -2,27 +2,27 @@
 @import '_mixins.scss';
 
 .card {
-  position: relative;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-right: 1.5em;
-  margin-left: 1.5em;
+  margin-right: 1em;
+  margin-left: 1em;
+  display: flex;
+  width: 100%;
 
   &_img_container {
-    display: block;
-    position: relative;
-    padding: 1em;
-    border-radius: 1.5em;
     overflow: hidden;
-    padding-top: 2em;
-    text-decoration: none;
+    border-radius: 1.5em;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    box-sizing: border-box;
+    position: relative;
 
     .card_img {
-      display: block;
+      position: absolute;
       width: 100%;
-      height: 40em;
+      height: 100%;
       object-fit: cover;
-      border-radius: 1.5em;
 
       &:hover {
         cursor: pointer;
@@ -32,16 +32,15 @@
 
   &_title {
     position: absolute;
-    bottom: 10px;
-    left: 6px;
+    bottom: 0.5vh;
+    left: 0.5vh;
     margin: 0;
     color: $white;
-    font-size: 30px;
+    font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.5em;
-    z-index: 2;
-    width: calc(90% + 50px);
-    padding: 0px 30px;
+    padding-left: 1rem;
+    width: calc(90%);
     pointer-events: none;
 
     &:hover {
@@ -52,17 +51,26 @@
 
 @include respond-to('mobile') {
   .card {
-    margin: 0px 0;
+    margin: 0;
     padding-top: 0.5em;
     padding-bottom: 0em;
-    
+    display: block;
+    width: calc(100% - 2em); // Ajustement de la largeur pour correspondre au header
+    margin: 0 auto; // Centrer les cartes sur mobile
+
     &_img_container {
       padding: 0;
       padding-top: 0.5em;
       border-radius: 15px;
+      height: auto; /* Ajustement pour mobile */
+      padding-bottom: 0;
+
       .card_img {
         height: 20em; // Réduction de la hauteur pour mobile
         border-radius: 15px;
+        position: relative;
+        width: 100%;
+        object-fit: cover;
       }
     }
 
@@ -72,6 +80,10 @@
       width: calc(100% - 2em); // Ajustement de la largeur pour le padding
       padding: 0.5em;
       border-radius: 0 0 1.5em 1.5em; // Arrondir les coins inférieurs
+      position: absolute; /* Ajout pour positionner correctement */
+      bottom: 10px; /* Ajustement de la position */
+      left: 10px; /* Ajustement de la position */
+      color: $white; /* S'assurer que le texte est blanc */
     }
   }
 }

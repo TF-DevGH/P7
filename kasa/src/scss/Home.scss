@@ -50,16 +50,17 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 1vw;
+    //padding: 1vw;
 }
 
 @include respond-to('mobile') {
     .gallery {
-        padding: 5vw;
+        padding: 0vw;
         margin: 0;
         background-color: white;
-        border-radius: 1.5em;
+        //border-radius: 1.5em;
     }
+
     .card_title {
         font-size: 5vw; // Utilisation de vw pour une taille de texte relative
         bottom: 0;
