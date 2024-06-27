@@ -29,7 +29,7 @@
 @media (max-width: 767.98px) {
   .star-container {
     justify-content: flex-start; /* Alignez les étoiles à gauche pour mobile */
-    padding-left: 0em; /* Ajoutez du padding à gauche pour un espace */
+    padding-left: 0em; /* Ajoutez du padding à gauche pour un espace ?>2vw;<? */
     padding-right: 0; /* Annule la marge à droite */
     width: 100%; /* Prendre toute la largeur disponible */
   }

@@ -14,11 +14,8 @@
 }
 
 .dropdown-container {
-  position: relative;
   z-index: 2;
-  width: 1023px;
-  height: 47px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 

@@ -15,15 +15,15 @@
   font-size: 1.5em;
 }
 
+
 .dropdown-container {
-  position: relative;
+  //position: relative;
   z-index: 2;
-  width: 1023px;
-  height: 47px;
-  border-radius: 10px;
+  //width: 1023px;
+  //height: 47px;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
-
 .dropdown-container.custom-dropdown-container {
   width: 90%;
   right: 0;
@@ -121,4 +121,5 @@
   line-height: 1.5em;
   overflow: hidden;
 }
+
 }

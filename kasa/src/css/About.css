@@ -25,15 +25,18 @@
 }
 
 .ContainerMenuDepliant {
-  padding-bottom: 0px;
+  padding-bottom: 24vh;
 }
 
 .footer {
+  max-width: 100%;
+  margin-top: 33px;
   width: 100%;
-  margin-top: 389px;
-  height: 18em;
+  height: 200px;
   position: relative;
   background-color: #000000;
+  padding: 20px 0;
+  margin-top: 5em;
 }
 
 .text {
@@ -88,6 +91,9 @@
     /* height: 50vh; */
     /* padding: 0vw; */
     padding-top: 3.5vw;
+  }
+  .ContainerMenuDepliant {
+    padding-bottom: 20vh;
   }
 }
 
