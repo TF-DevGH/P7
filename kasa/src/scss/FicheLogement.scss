@@ -10,6 +10,14 @@
 
 * {
   font-family: 'Montserrat Light', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fiche-logement {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .round-image-container {
@@ -31,6 +39,7 @@
 }
 
 .caroussel {
+  width: 100%;
   .button-left,
   .button-right {
     padding: 3em;
@@ -38,6 +47,7 @@
 }
 
 .caroussel .image-wrapper {
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -123,6 +133,8 @@
 }
 
 .content-wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
   .title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -210,6 +222,7 @@
 .collapse-wrapper {
   display: flex;
   justify-content: space-between; /* Pour aligner les barres correctement */
+  width: 100%;
 }
 
 .collapse-container {
@@ -340,6 +353,7 @@
   .collapse-wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .collapse-container {
