@@ -95,7 +95,7 @@
 }
 
 .titles {
-  width: 70%;
+  width: 100%;
   line-height: 5em;
 }
 
@@ -121,6 +121,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 2vh;
 }
 
 .note-container {
