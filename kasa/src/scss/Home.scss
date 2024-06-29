@@ -2,99 +2,102 @@
 @import '_mixins.scss';
 
 .AboutBanner {
-    position: relative;
-    width: 100%;
-    height: 32vh; // Utilisation de vh pour hauteur relative à la fenêtre
-    border-radius: 25px;
-    overflow: hidden;
-    padding: 0vw; // Padding en vw pour adaptation fluide
+  position: relative;
+  width: 100%;
+  height: 32vh; // Utilisation de vh pour hauteur relative à la fenêtre
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 0vw; // Padding en vw pour adaptation fluide
 }
 
 .AboutBannerImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-    border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  border-radius: 25px;
 }
 
 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: $white;
 }
 
 .content h2 {
-    font-size: 5vw; // Utilisation de vw pour une taille de texte relative
-    width: max-content;
-    font-weight: 500;
-    margin: 0;
+  font-size: 5vw; // Utilisation de vw pour une taille de texte relative
+  width: max-content;
+  font-weight: 500;
+  margin: 0;
 }
 
 .gallery {
-    padding: 2vw;
-    margin: 2vw;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: $light-gray;
-    border-radius: 1.5em;
-    overflow: hidden;
+  padding: 2vw;
+  margin: 2vw;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $light-gray;
+  border-radius: 1.5em;
+  overflow: hidden;
 }
 
 .gallery-row {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    //padding: 1vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 @include respond-to('mobile') {
-    .gallery {
-        padding: 0vw;
-        margin: 0;
-        background-color: white;
-        //border-radius: 1.5em;
-    }
+  .gallery {
+    padding: 0vw;
+    margin: 0;
+    background-color: white;
+  }
 
-    .card_title {
-        font-size: 5vw; // Utilisation de vw pour une taille de texte relative
-        bottom: 0;
-        width: calc(100% - 2em);
-        padding: 0.5em;
-        border-radius: 0 0 1.5em 1.5em;
-    }
-    .content h2 {
-        text-align: start;
-        font-size: 6vw;
-        margin: 0;
-        padding-right: 1em;
-        width: 12em;
-    }
-    .HomeBannerImage {
-        border-radius: 15px;
-    }
-    .AboutBanner {
-        height: 50vh; // Utilisation de vh pour hauteur relative à la fenêtre
-        padding: 5vw; // Padding en vw pour adaptation fluide
-    }
-    .AboutBannerImage {
-        border-radius: 12px;
-    }
-    .dropdown-container.custom-dropdown-container {
-        width: 90%;
-        right: 0;
-        position: relative;
-        bottom: 0;
-        left: 52%;
-        transform: translateX(-50%);
-        padding: 0px;
-        overflow: hidden;
-        height: auto;
-        margin-top: 3em;
-    }
+  .card_title {
+    font-size: 5vw; // Utilisation de vw pour une taille de texte relative
+    bottom: 0;
+    width: calc(100% - 2em);
+    padding: 0.5em;
+    border-radius: 0 0 1.5em 1.5em;
+  }
+
+  .content h2 {
+    text-align: start;
+    font-size: 6vw;
+    margin: 0;
+    padding-right: 1em;
+    width: 12em;
+  }
+
+  .HomeBannerImage {
+    border-radius: 15px;
+  }
+
+  .AboutBanner {
+    height: 50vh; // Utilisation de vh pour hauteur relative à la fenêtre
+    padding: 5vw; // Padding en vw pour adaptation fluide
+  }
+
+  .AboutBannerImage {
+    border-radius: 12px;
+  }
+
+  .dropdown-container.custom-dropdown-container {
+    width: 90%;
+    right: 0;
+    position: relative;
+    bottom: 0;
+    left: 52%;
+    transform: translateX(-50%);
+    padding: 0px;
+    overflow: hidden;
+    height: auto;
+    margin-top: 3em;
+  }
 }

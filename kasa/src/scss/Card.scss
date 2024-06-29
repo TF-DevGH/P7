@@ -14,7 +14,7 @@
     border-radius: 1.5em;
     width: 100%;
     height: 0;
-    padding-bottom: 100%;
+    padding-bottom: 100%; // Maintient un ratio carré
     box-sizing: border-box;
     position: relative;
 
@@ -36,7 +36,7 @@
     left: 0.5vh;
     margin: 0;
     color: $white;
-    font-size: 1.1rem;
+    font-size: 2vw; // Utilisation de vw pour taille de police relative
     font-weight: 500;
     line-height: 1.5em;
     padding-left: 1rem;
@@ -62,7 +62,7 @@
       padding: 0;
       padding-top: 0.5em;
       border-radius: 15px;
-      height: auto; /* Ajustement pour mobile */
+      height: auto; // Ajustement pour mobile
       padding-bottom: 0;
 
       .card_img {
@@ -80,10 +80,10 @@
       width: calc(100% - 2em); // Ajustement de la largeur pour le padding
       padding: 0.5em;
       border-radius: 0 0 1.5em 1.5em; // Arrondir les coins inférieurs
-      position: absolute; /* Ajout pour positionner correctement */
-      bottom: 10px; /* Ajustement de la position */
-      left: 10px; /* Ajustement de la position */
-      color: $white; /* S'assurer que le texte est blanc */
+      position: absolute; // Ajout pour positionner correctement
+      bottom: 10px; // Ajustement de la position
+      left: 10px; // Ajustement de la position
+      color: $white; // S'assurer que le texte est blanc
     }
   }
 }
