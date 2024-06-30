@@ -6,5 +6,11 @@
         @media (max-width: $breakpoint-tablet) { @content; }
     } @else if $breakpoint == 'desktop' {
         @media (min-width: $breakpoint-desktop) { @content; }
+    } @else if $breakpoint == 'iphone-se' {
+        @media (max-width: $breakpoint-iphone-se) and (max-height: 667px) { @content; }
+    } @else if $breakpoint == 'samsung-s8' {
+        @media (max-width: $breakpoint-samsung-s8) and (max-height: 740px) { @content; }
+    } @else if $breakpoint == 'small-devices' {
+        @media (max-width: 375px) and (max-height: 740px) { @content; }
     }
 }

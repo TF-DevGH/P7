@@ -250,3 +250,116 @@ header {
         padding-top: 50px;
     }
 }
+
+
+/* Media queries pour small devices + devices exceptionnels (plus bas) */
+@include respond-to('small-devices') {
+    header nav {
+        width: auto;
+        flex-flow: column;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 8vh;
+        padding-right: 4vw;
+    }
+
+    .content-wrapper .host-info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        padding-bottom: 0em;
+        margin-right: 16vw;
+        margin-bottom: 9em;
+    }
+
+    .menu .menu-item {
+        cursor: pointer;
+        color: #FF6060;
+        font-family: "Montserrat Light", sans-serif;
+        font-size: 4vw;
+        font-weight: 500;
+        line-height: 1.75vh;
+        letter-spacing: 0em;
+        text-align: right;
+        margin: 0;
+        padding: 0 0vw;
+        padding-top: 0vh;
+        padding-right: 0em;
+        position: relative;
+        text-decoration: none;
+    }
+}
+/* Media queries for specific devices */
+@include respond-to('iphone-se') {
+    header nav {
+        width: auto;
+        flex-flow: column;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 8vh;
+        padding-right: 5vw;
+    }
+
+    .content-wrapper .host-info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        padding-bottom: 0em;
+        margin-right: 16vw;
+        margin-bottom: 9em;
+    }
+
+    .menu .menu-item {
+        cursor: pointer;
+        color: #FF6060;
+        font-family: "Montserrat Light", sans-serif;
+        font-size: 4vw;
+        font-weight: 500;
+        line-height: 1.75vh;
+        letter-spacing: 0em;
+        text-align: right;
+        margin: 0;
+        padding: 0 0vw;
+        padding-top: 0vh;
+        padding-right: 0em;
+        position: relative;
+        text-decoration: none;
+    }
+}
+
+@include respond-to('samsung-s8') {
+    header nav {
+        width: auto;
+        flex-flow: column;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 7vh;
+        padding-right: 5vw;
+    }
+
+    .content-wrapper .host-info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        padding-bottom: 0em;
+        margin-right: 16vw;
+        margin-bottom: 9em;
+    }
+
+    .menu .menu-item {
+        cursor: pointer;
+        color: #FF6060;
+        font-family: "Montserrat Light", sans-serif;
+        font-size: 4vw;
+        font-weight: 500;
+        line-height: 1.75vh;
+        letter-spacing: 0em;
+        text-align: right;
+        margin: 0;
+        padding: 0 0vw;
+        padding-top: 0vh;
+        padding-right: 0em;
+        position: relative;
+        text-decoration: none;
+    }
+}

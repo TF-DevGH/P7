@@ -9,6 +9,10 @@ $font-size-large: 20px; // Taille large
 $font-size-small: 12px; // Taille petite
 
 // Points de rupture pour le responsive design
-$breakpoint-mobile: 767.98px; // Largeur maximale pour les mobiles // Passer en flex/column (Afficher une image après l'autre en colonne/en verticalité, en display flex column). // Changer la largeur & hauteur des images
-$breakpoint-tablet: 1024px; // Largeur maximale pour les tablettes // Changer la largeur & hauteur des images
+$breakpoint-mobile: 767.98px; // Largeur maximale pour les mobiles
+$breakpoint-tablet: 1024px; // Largeur maximale pour les tablettes
 $breakpoint-desktop: 1280px; // Largeur minimale pour les desktops (vous pouvez ajuster cette valeur)
+
+// Breakpoints spécifiques pour iPhone SE et Samsung Galaxy S8+
+$breakpoint-iphone-se: 375px; // Largeur maximale pour l'iPhone SE
+$breakpoint-samsung-s8: 360px; // Largeur maximale pour le Samsung Galaxy S8+
