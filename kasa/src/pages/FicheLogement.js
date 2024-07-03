@@ -1,36 +1,32 @@
-// FicheLogement.js
-import React, { useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React from 'react';
 import Caroussel from '../components/Caroussel';
 import Collapse from '../components/Collapse';
 import EquipementList from '../components/EquipementList';
+import '../scss/FicheLogement.scss';
 import Tag from '../components/Tag';
 import Note from '../components/Note';
 import RoundImage from '../components/RoundImage';
 import { logementList } from '../data/logementList';
+import { useParams } from "react-router-dom";
 import Banner from '../components/Banner';
-import '../scss/FicheLogement.scss';
 
 const FicheLogement = () => {
+  const pageWidth = '100vw';
+  const pageMargin = '5vw';
+  const availableWidth = `calc(${pageWidth} - 2 * ${pageMargin})`;
+
   const { id } = useParams();
-  const navigate = useNavigate();
 
   const logement = logementList.find(logement => logement.id === id);
 
-  useEffect(() => {
-    if (!logement) {
-      navigate('/notfound');
-    }
-  }, [logement, navigate]);
-
   if (!logement) {
-    return null; // Optionnel, le composant ne rend rien si le logement n'est pas trouvé
+    return <div>Logement non trouvé.</div>;
   }
 
   return (
     <div className="fiche-logement">
       <div className="content-wrapper">
-        <Caroussel images={logement.pictures} />
+        <Caroussel images={logement.pictures}/>
         <div className="title-wrapper">
           <div className="Titre_Description_Tags">
             <div className="titles">

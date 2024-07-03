@@ -76,7 +76,7 @@ header {
         text-align: right;
         margin: 0;
         padding: 0 0vw;
-        padding-top: 1vh;
+        padding-top: 0vh;
         padding-right: 0em;
         position: relative;
         text-decoration: none;
@@ -114,32 +114,6 @@ header {
     }
 }
 
-/* Media queries for different screen sizes */
-@media only screen and (max-width: 1800px) {
-    .menu-item {
-        line-height: 3.5vh;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-    .menu-item {
-        line-height: 4vh;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .menu-item {
-        line-height: 4.5vh;
-    }
-}
-
-/* Adjust for larger screens */
-@media only screen and (min-width: 2560px) {
-    .menu-item {
-        line-height: 5vh;
-        padding-bottom: 1vh; /* Ajustement de l'espacement pour les grands écrans */
-    }
-}
 
 @include respond-to('mobile') {
     .menu {
@@ -178,7 +152,7 @@ header {
         flex-flow: column;
         align-items: center;
         flex-direction: row;
-        padding-top: 2vh;
+        padding-top: 3vh;
         padding-right: 4vw;
     }
 
@@ -362,4 +336,40 @@ header {
         position: relative;
         text-decoration: none;
     }
+}
+@include respond-to('iphone-se') {
+    .content-wrapper .host-info {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      padding-bottom: 0em;
+      margin-right: 4vw;
+      margin-bottom: 24vh;
+  }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      border-radius: 1em;
+      height: 25px;
+      font-size: 5px;
+  }
+}
+@include respond-to('samsung-s8') {
+    .content-wrapper .host-info {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      padding-bottom: 0em;
+      margin-right: 5vw;
+      margin-bottom: 9em;
+  }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      border-radius: 1em;
+      height: 25px;
+      font-size: 4.95px;
+  }
 }

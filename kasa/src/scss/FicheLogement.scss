@@ -86,6 +86,7 @@
 
 .star {
   padding: 1em;
+  padding-top: 3vh;
 }
 
 .host-info-wrapper {
@@ -244,6 +245,7 @@
   margin-top: 3em;
 }
 
+
 @include respond-to('mobile') {
   .content-wrapper .Titre_Description_Tags {
     flex: 1 1;
@@ -334,7 +336,7 @@
     background: #ff6060;
     border-radius: 1em;
     height: 25px;
-    font-size: 8px;
+    font-size: 6px;
 }
 
   .star {
@@ -485,5 +487,41 @@
 @include respond-to('tablet') {
   .note-container {
     margin-left: initial;
+  }
+}
+@include respond-to('iphone-se') {
+    .content-wrapper .host-info {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      padding-bottom: 0em;
+      margin-right: 4vw;
+      margin-bottom: 24vh;
+  }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      border-radius: 1em;
+      height: 25px;
+      font-size: 5px;
+  }
+}
+@include respond-to('samsung-s8') {
+    .content-wrapper .host-info {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      padding-bottom: 0em;
+      margin-right: 5vw;
+      margin-bottom: 9em;
+  }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      border-radius: 1em;
+      height: 25px;
+      font-size: 4.95px;
   }
 }
