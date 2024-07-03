@@ -1,6 +1,6 @@
 import React from 'react';
 import Caroussel from '../components/Caroussel';
-import Collapse from '../components/Collapse';
+import MenuDepliant from '../components/MenuDepliant';
 import EquipementList from '../components/EquipementList';
 import '../scss/FicheLogement.scss';
 import Tag from '../components/Tag';
@@ -58,7 +58,7 @@ const FicheLogement = () => {
 
         <div className="collapse-wrapper">
           <div className="collapse-container" key={`${id}-equipements`}>
-            <Collapse logement={logement} />
+            <MenuDepliant title={logement.title} description={logement.description} />
           </div>
           <div className="collapse-container" key={`${id}-equipements`}>
             <EquipementList equipments={logement.equipments} id={id} />

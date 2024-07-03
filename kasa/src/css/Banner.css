@@ -10,12 +10,13 @@
 
 .HomeBanner {
   position: relative;
-  width: 100%;
-  height: 32vh;
+  width: calc(100% - 4vw);
+  height: 16.25vw;
   border-radius: 25px;
   overflow: hidden;
-  padding: 2vw;
-  margin-top: 2em;
+  margin: 2em auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .HomeBannerImage {

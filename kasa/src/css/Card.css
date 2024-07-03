@@ -30,7 +30,7 @@
   left: 0.5vh;
   margin: 0;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 2vw;
   font-weight: 500;
   line-height: 1.5em;
   padding-left: 1rem;
@@ -54,7 +54,7 @@
     padding: 0;
     padding-top: 0.5em;
     border-radius: 15px;
-    height: auto; /* Ajustement pour mobile */
+    height: auto;
     padding-bottom: 0;
   }
   .card_img_container .card_img {
@@ -70,10 +70,10 @@
     width: calc(100% - 2em);
     padding: 0.5em;
     border-radius: 0 0 1.5em 1.5em;
-    position: absolute; /* Ajout pour positionner correctement */
-    bottom: 10px; /* Ajustement de la position */
-    left: 10px; /* Ajustement de la position */
-    color: #ffffff; /* S'assurer que le texte est blanc */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ffffff;
   }
 }
 

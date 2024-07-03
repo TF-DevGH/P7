@@ -9,10 +9,9 @@ import BackgroundSVG from '../assets/backgroundHome.svg';
 import { logementList } from '../data/logementList';
 
 const Home = () => {
-  const limitedLogements = logementList.slice(0, 6);
   const groupedLogements = [];
-  for (let i = 0; i < limitedLogements.length; i += 3) {
-    groupedLogements.push(limitedLogements.slice(i, i + 3));
+  for (let i = 0; i < logementList.length; i += 3) {
+    groupedLogements.push(logementList.slice(i, i + 3));
   }
 
   return (
