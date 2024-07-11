@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import vectord from '../assets/vectord.svg';
 import vectorg from '../assets/vectorg.svg';
 import '../scss/Caroussel.scss';
-const Caroussel = ({images}) => {
+
+const Caroussel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handlePrevImage = () => {
@@ -14,7 +15,7 @@ const Caroussel = ({images}) => {
   };
 
   const renderImageNumber = () => {
-    return `${currentImageIndex + 1}/${images.length}`;
+    return images.length > 1 ? `${currentImageIndex + 1}/${images.length}` : '';
   };
 
   const showButtons = images.length > 1; // Vérifie s'il y a plus d'une image
@@ -22,9 +23,11 @@ const Caroussel = ({images}) => {
   return (
     <div className="caroussel">
       <div className="image-wrapper">
-        <img src={images[currentImageIndex]} alt="" className="img_1"/>
+        <img src={images[currentImageIndex]} alt="" className="img_1" />
 
-        <div className="image-number">{renderImageNumber()}</div>
+        {images.length > 1 && (
+          <div className="image-number">{renderImageNumber()}</div>
+        )}
 
         {showButtons && ( // Affiche les boutons seulement s'il y a plus d'une image
           <>
@@ -40,6 +43,5 @@ const Caroussel = ({images}) => {
     </div>
   );
 };
-
 
 export default Caroussel;
