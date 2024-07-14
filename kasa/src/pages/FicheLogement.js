@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'; 
 import Caroussel from '../components/Caroussel';
-import MenuDepliant from '../components/MenuDepliant';
+import MenuDepliant from '../components/MenuDepliant';  // Avant c'était Collapse from Collapse
 import EquipementList from '../components/EquipementList';
 import '../scss/FicheLogement.scss';
 import Tag from '../components/Tag';

@@ -5,7 +5,7 @@ import '../scss/Banner.scss';
 import '../scss/About.scss';
 
 import BackgroundSVG from '../assets/imgAbout.svg';
-import MenuDepliant from '../components/MenuDepliant';
+import MenuDepliant from '../components/MenuDepliant'; //Avant c'était "import Collapse from (...) Collapse"
 //Pas de About.scss, pourtant "About.js" est bien fonctionnel ! ...
 
 const About = () => {
@@ -14,6 +14,7 @@ const About = () => {
       <Banner imageUrl={BackgroundSVG} className="AboutBanner" imgClassName="AboutBannerImage"/>
       <div class="ContainerMenuDepliant">
         {/* Passez les titres et descriptions comme props à chaque MenuDepliant */}
+        {/* Avant, en-dessous, il n'y avait pas MenuDepliant mais "Collapse" à la place de "MenuDepliant title="Fiabilité"... */}
         <MenuDepliant title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
         <MenuDepliant title="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
         <MenuDepliant title="Service" description="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />
