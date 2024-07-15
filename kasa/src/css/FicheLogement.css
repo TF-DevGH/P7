@@ -110,8 +110,8 @@
 
 .text-container {
   color: #FF6060;
-  font-size: 1.5vw; /* Adjusted for responsiveness */
-  padding-right: 3em;
+  font-size: 1.45vw; /* Adjusted for responsiveness */
+  padding-right: 4.5vw;
   padding-top: 0em;
 }
 
@@ -443,7 +443,7 @@
   margin-left: 0em;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .note-container {
     margin-left: initial;
   }
