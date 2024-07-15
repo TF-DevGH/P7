@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams, Navigate } from 'react-router-dom'; // Importez Navigate pour la redirection
 import Caroussel from '../components/Caroussel';
 import MenuDepliant from '../components/MenuDepliant';
 import EquipementList from '../components/EquipementList';
@@ -7,14 +8,14 @@ import Tag from '../components/Tag';
 import Note from '../components/Note';
 import RoundImage from '../components/RoundImage';
 import { logementList } from '../data/logementList';
-import { useParams } from "react-router-dom";
 
 const FicheLogement = () => {
   const { id } = useParams();
   const logement = logementList.find(logement => logement.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé.</div>;
+    // Si l'ID du logement n'est pas valide, rediriger vers NotFound
+    return <Navigate to="/notfound" />;
   }
 
   return (
