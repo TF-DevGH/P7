@@ -1,6 +1,6 @@
-import React from 'react'; 
+import React from 'react';
 import Caroussel from '../components/Caroussel';
-import MenuDepliant from '../components/MenuDepliant';  // Avant c'était Collapse from Collapse
+import MenuDepliant from '../components/MenuDepliant';
 import EquipementList from '../components/EquipementList';
 import '../scss/FicheLogement.scss';
 import Tag from '../components/Tag';
@@ -8,15 +8,9 @@ import Note from '../components/Note';
 import RoundImage from '../components/RoundImage';
 import { logementList } from '../data/logementList';
 import { useParams } from "react-router-dom";
-import Banner from '../components/Banner';
 
 const FicheLogement = () => {
-  const pageWidth = '100vw';
-  const pageMargin = '5vw';
-  const availableWidth = `calc(${pageWidth} - 2 * ${pageMargin})`;
-
   const { id } = useParams();
-
   const logement = logementList.find(logement => logement.id === id);
 
   if (!logement) {
@@ -51,14 +45,14 @@ const FicheLogement = () => {
               </div>
             </div>
             <div className='note-container'>
-              <Note />
+              <Note rating={logement.rating} />
             </div>
           </div>
         </div>
 
         <div className="collapse-wrapper">
-          <div className="collapse-container" key={`${id}-equipements`}>
-            <MenuDepliant title={logement.title} description={logement.description} />
+          <div className="collapse-container" key={`${id}-description`}>
+            <MenuDepliant title="Description" description={logement.description} />
           </div>
           <div className="collapse-container" key={`${id}-equipements`}>
             <EquipementList equipments={logement.equipments} id={id} />

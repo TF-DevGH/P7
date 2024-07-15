@@ -1,4 +1,3 @@
-//A SUPPRIMER
 import React, { useState } from 'react';
 import '../scss/Collapse.scss';
 import ddmenuclosed from '../assets/ddmenuclosed.svg'; // Importez le fichier SVG

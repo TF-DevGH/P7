@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import '../scss/Collapse.scss';
+import '../scss/MenuDepliant.scss';
 import ddmenuclosed from '../assets/ddmenuclosed.svg'; // Importez le fichier SVG
 
-const Collapse = ({ title, description }) => {
-  // Définissez l'état isOpen avec useState en dehors de la condition
+const MenuDepliant = ({ title, description, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
-    // Inversez l'état isOpen lorsque le header est cliqué
     setIsOpen(!isOpen);
   };
 
@@ -24,7 +22,8 @@ const Collapse = ({ title, description }) => {
         </div>
         {isOpen && (
           <div className="dropdown-content">
-            <p>{description}</p>
+            {description && <p>{description}</p>}
+            {children}
           </div>
         )}
       </div>
@@ -32,4 +31,4 @@ const Collapse = ({ title, description }) => {
   );
 };
 
-export default Collapse;
+export default MenuDepliant;
