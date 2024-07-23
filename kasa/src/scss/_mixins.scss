@@ -5,6 +5,9 @@
     } @else if $breakpoint == 'tablet' {
         $tablet-min: $breakpoint-mobile + 0.02px;
         @media (min-width: $tablet-min) and (max-width: $breakpoint-tablet) { @content; }
+    } @else if $breakpoint == 'desktop' {
+        $desktop-min: $breakpoint-tablet + 0.02px;
+        @media (min-width: $desktop-min) and (max-width: $breakpoint-desktop) { @content; }
     } @else if $breakpoint == 'iphone-se' {
         @media (max-width: $breakpoint-iphone-se) and (max-height: 667px) { @content; }
     } @else if $breakpoint == 'samsung-s8' {

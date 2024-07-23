@@ -116,7 +116,7 @@
   color: #FF6060;
   font-size: 1.45vw; /* Adjusted for responsiveness */
   padding-right: 4.5vw;
-  padding-top: 0em
+  padding-top: 0em;
 }
 
 .tag-zone {
@@ -244,7 +244,6 @@
   height: auto;
   margin-top: 3em;
 }
-
 
 @include respond-to('mobile') {
   .content-wrapper .Titre_Description_Tags {
@@ -485,10 +484,151 @@
 }
 
 @include respond-to('tablet') {
-  .note-container {
-    margin-left: initial;
+    /* Styles pour tablette */
+    .titre1 {
+    color: #ff6060;
+    font-size: 3.5vw;
+    font-weight: bolder;
+    margin-right: auto;
+}
+    .content-wrapper .title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 4vw;
+      padding-left: 3%;
+      padding-right: 3%;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+  }
+    .content-wrapper .tag-header{
+      //border-radius: 8em;
+      //" le border-radius qui fait 8em, ça active le border-radius de 5px dans "Tag.scss:94;".
+    }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      /* border-radius: 2em; */
+      height: 25px;
+    }
+    .titles {
+      width: 100%;
+      line-height: 3em;
+  }
+  .titre1 {
+    color: #ff6060;
+    font-size: 3.5vw;
+    font-weight: bolder;
+    margin-right: auto;
+}
+    .tag-container .tag-title {
+      font-size: 16px;
+      padding: 0em;
+  }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      border-radius: 10px;
+      height: 25px;
+  }
+    .tag-header {
+      width: 100%;
+      padding: 2em;
+      display: flex;
+      height: 47px;
+      align-items: center;
+      justify-content: center;
+      background: #FF6060;
+      border-radius: 10px;
+      height: 25px;
+      top: 670px;
+      left: 100px;
+    }
+    .star {
+      padding: 5px;
+      width: 36px;
+      padding-bottom: 4.25vh;
   }
 }
+
+@include respond-to('desktop') {
+    /* Styles pour desktop */
+    .content-wrapper .title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 4vw;
+      padding-left: 3%;
+      padding-right: 3%;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+  }
+    .content-wrapper .tag-header{
+      //border-radius: 8em;
+      //" le border-radius qui fait 8em, ça active le border-radius de 5px dans "Tag.scss:94;".
+    }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      /* border-radius: 2em; */
+      height: 25px;
+    }
+    .titles {
+      width: 100%;
+      line-height: 4em;
+  }
+    .tag-container .tag-title {
+      font-size: 16px;
+      padding: 1em;
+    }
+    .content-wrapper .tag-header {
+      display: flex;
+      align-items: center;
+      background: #ff6060;
+      border-radius: 10px;
+      height: 25px;
+  }
+    .tag-header {
+      width: 100%;
+      padding: 2em;
+      display: flex;
+      height: 47px;
+      align-items: center;
+      justify-content: center;
+      background: #FF6060;
+      border-radius: 10px;
+      height: 25px;
+      top: 670px;
+      left: 100px;
+    }
+    .star {
+      padding: 5px;
+      width: 36px;
+      padding-bottom: 4.25vh;
+  }
+  .content-wrapper .text-and-pic {
+    display: flex;
+    align-items: center;
+    flex-wrap: unset;
+  }
+  .text-container {
+      color: #FF6060;
+      font-size: 2.5vw;
+      padding-right: 4vw;
+      padding-top: 0em;
+  }
+  .titre2 {
+      font-size: 2.25vw;
+      color: #ff6060;
+  }
+
+}
+
 @include respond-to('iphone-se') {
     .content-wrapper .host-info {
       display: flex;
@@ -507,6 +647,7 @@
       font-size: 5px;
   }
 }
+
 @include respond-to('samsung-s8') {
     .content-wrapper .host-info {
       display: flex;
@@ -524,7 +665,4 @@
       height: 25px;
       font-size: 4.95px;
   }
-}
-@include respond-to('tablet') {
-
 }

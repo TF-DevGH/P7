@@ -175,3 +175,50 @@
 
   /* } .caroussel .image-wrapper {*/
 }
+
+@include respond-to('tablet') {
+    /* Styles pour tablette */
+    .tag-header {
+      width: 100%;
+      padding: 1.25em;
+      display: flex;
+      height: 47px;
+      align-items: center;
+      justify-content: center;
+      background: #FF6060;
+      border-radius: 5px;
+      height: 25px;
+      top: 670px;
+      left: 100px;
+  }
+    .tag-content {
+      padding: 0em;
+      overflow: hidden;
+  }
+}
+
+@include respond-to('desktop') {
+      /* Styles pour desktop */
+      .tag-container .tag-title {
+        font-size: 16px;
+        padding: 1em;
+    }
+    .tag-header {
+      width: 100%;
+      padding: 1em;
+      display: flex;
+      height: 47px;
+      align-items: center;
+      justify-content: center;
+      background: #FF6060;
+      border-radius: 5px;
+      height: 25px;
+      top: 670px;
+      left: 100px;
+    }
+
+  .content-wrapper .tag-container {
+    font-size:0px;
+    padding-right:10px
+  }
+}

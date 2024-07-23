@@ -10,7 +10,8 @@ $font-size-small: 12px; // Taille petite
 
 // Points de rupture pour le responsive design
 $breakpoint-mobile: 767.98px; // Largeur maximale pour les mobiles
-$breakpoint-tablet: 1280px; // Largeur maximale pour les tablettes
+$breakpoint-tablet: 1200px; // Largeur maximale pour les tablettes
+$breakpoint-desktop: 1440px; // Largeur maximale pour les desktops
 
 // Breakpoints spécifiques pour iPhone SE et Samsung Galaxy S8+
 $breakpoint-iphone-se: 375px; // Largeur maximale pour l'iPhone SE

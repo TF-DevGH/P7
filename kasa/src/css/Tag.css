@@ -153,5 +153,49 @@
   }
   /* } .caroussel .image-wrapper {*/
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Styles pour tablette */
+  .tag-header {
+    width: 100%;
+    padding: 1.25em;
+    display: flex;
+    height: 47px;
+    align-items: center;
+    justify-content: center;
+    background: #FF6060;
+    border-radius: 5px;
+    height: 25px;
+    top: 670px;
+    left: 100px;
+  }
+  .tag-content {
+    padding: 0em;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1200.02px) and (max-width: 1440px) {
+  /* Styles pour desktop */
+  .tag-container .tag-title {
+    font-size: 16px;
+    padding: 1em;
+  }
+  .tag-header {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    height: 47px;
+    align-items: center;
+    justify-content: center;
+    background: #FF6060;
+    border-radius: 5px;
+    height: 25px;
+    top: 670px;
+    left: 100px;
+  }
+  .content-wrapper .tag-container {
+    font-size: 0px;
+    padding-right: 10px;
+  }
+}
 
 /*# sourceMappingURL=Tag.css.map */
