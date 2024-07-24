@@ -92,5 +92,11 @@
     margin-top: 3em;
   }
 }
+@media (min-width: 1200.02px) and (max-width: 1440px) {
+  /* Styles pour desktop */
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Styles pour tablette */
+}
 
 /*# sourceMappingURL=Home.css.map */

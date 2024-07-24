@@ -101,3 +101,10 @@
     margin-top: 3em;
   }
 }
+@include respond-to('desktop') {
+  /* Styles pour desktop */
+}
+@include respond-to('tablet') {
+  /* Styles pour tablette */
+}
+
