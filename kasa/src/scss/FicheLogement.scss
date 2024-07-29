@@ -102,7 +102,7 @@
 
 .titre1 {
   color: #ff6060;
-  font-size: 2.5vw; /* Adjusted for responsiveness */
+  font-size: 3vw; /* Adjusted for responsiveness */
   font-weight: bolder;
   margin-right: auto;
 }
@@ -420,7 +420,7 @@
 
   .titre1 {
     color: #ff6060;
-    font-size: 1.45em;
+    font-size: 3vw;
     line-height: 1.5em;
     max-width: 18em;
     margin-right: auto;
@@ -486,11 +486,11 @@
 @include respond-to('tablet') {
     /* Styles pour tablette */
     .titre1 {
-    color: #ff6060;
-    font-size: 3.5vw;
-    font-weight: bolder;
-    margin-right: auto;
-}
+      color: #ff6060;
+      font-size: 3vw;
+      font-weight: bolder;
+      margin-right: auto;
+  }
     .content-wrapper .title-wrapper {
       display: flex;
       justify-content: space-between;
@@ -502,6 +502,39 @@
       margin: 0 auto;
       position: relative;
   }
+  .content-wrapper .text-container {
+    color: #FF6060;
+    font-size: 2vw;
+    padding-right: 4vw;
+    padding-top: 0em;
+}
+  .content-wrapper .host-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-bottom: 0em;
+    margin-right: 0em;
+    margin-bottom: 10em;
+  }
+  .content-wrapper .Profil_Note {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  .round-image-container {
+    width: 64px;
+    height: 64px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0em;
+  }
+
+
     .content-wrapper .tag-header{
       //border-radius: 8em;
       //" le border-radius qui fait 8em, ça active le border-radius de 5px dans "Tag.scss:94;".
@@ -517,12 +550,6 @@
       width: 100%;
       line-height: 3em;
   }
-  .titre1 {
-    color: #ff6060;
-    font-size: 3.5vw;
-    font-weight: bolder;
-    margin-right: auto;
-}
     .tag-container .tag-title {
       font-size: 16px;
       padding: 0em;
@@ -617,12 +644,27 @@
     align-items: center;
     flex-wrap: unset;
   }
-  .text-container {
-      color: #FF6060;
-      font-size: 2.5vw;
-      padding-right: 4vw;
-      padding-top: 0em;
-  }
+  .content-wrapper .host-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-bottom: 0em;
+    margin-right: 0em;
+    margin-bottom: 10em;
+}
+.text-container {
+  color: #FF6060;
+  font-size: 2.5vw;
+  padding-right: 4vw;
+  padding-left: 4vw;
+  padding-top: 0em;
+}
+  .titre1 {
+    color: #ff6060;
+    font-size: 3vw;
+    font-weight: bolder;
+    margin-right: auto;
+}
   .titre2 {
       font-size: 2.25vw;
       color: #ff6060;

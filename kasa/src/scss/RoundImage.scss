@@ -1,49 +1,51 @@
 @font-face {
-    font-family: 'Montserrat Light';
-    src: url('../fonts/Montserrat-Light.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-@import '_variables.scss';
-@import '_mixins.scss';
-@font-face {
-    font-family: 'Montserrat Light';
-    src: url('../fonts/Montserrat-Light.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Montserrat Light';
+  src: url('../fonts/Montserrat-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@import '_variables.scss';
+@import '_mixins.scss';
+
 * {
-    font-family: 'Montserrat Light', sans-serif;
+  font-family: 'Montserrat Light', sans-serif;
 }
-  *{
-        font-family: 'Montserrat Light';
-        src: url('../fonts/Montserrat-Light.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-  }
+
 .round-image-container {
+  width: 64px;
+  height: 64px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+@include respond-to('mobile') {
+  .round-image-container .profile-image {
     width: 64px;
     height: 64px;
-    background: #C4C4C4;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    .profile-image {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
   }
-  
-  @include respond-to('mobile') {
-    .round-image-container .profile-image {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      object-fit: cover;
+}
+
+@include respond-to('tablet') {
+  .round-image-container .profile-image {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@include respond-to('desktop') {
+  .round-image-container .profile-image {
+    width: 120px;
+    height: 120px;
   }
 }
