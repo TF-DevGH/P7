@@ -200,9 +200,10 @@
 @include respond-to('desktop') {
       /* Styles pour desktop */
       .tag-container .tag-title {
-        font-size: 16px;
-        padding: 1em;
+        font-size: 18px;
+        padding: 0vw;
     }
+
     .tag-header {
       width: 100%;
       padding: 1em;
@@ -216,9 +217,22 @@
       top: 670px;
       left: 100px;
     }
-
-  .content-wrapper .tag-container {
-    font-size:0px;
-    padding-right:10px
-  }
+.content-wrapper .tag-header {
+    display: flex;
+    align-items: center;
+    background: #ff6060;
+    border-radius: 2em;
+    height: 25px;
+    padding: 2em;
+    width: 100%;
+}
+.content-wrapper .tag-container {
+  position: relative;
+  z-index: 2;
+  padding-right: 0em;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  padding-top: 0em;
+  font-size: 10px;
+}
 }
