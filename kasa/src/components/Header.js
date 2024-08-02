@@ -17,8 +17,9 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <div className="header-logo"> {/* Changez la classe en header-logo */}
-          <img class="KasaLogo" src={LogoSVG} alt="Kasa Logo"/>
+        <div className="header-logo">
+          {/* Ajout de l'événement onClick pour rediriger vers la page d'accueil */}
+          <img className="KasaLogo" src={LogoSVG} alt="Kasa Logo" onClick={goToHome} />
         </div>
         <nav className="menu">
           {/* Utiliser les fonctions pour effectuer la navigation */}

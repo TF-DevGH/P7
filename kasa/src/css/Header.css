@@ -37,6 +37,10 @@ header nav {
   padding-right: 3vw; /* Utilisation de vw pour un padding relatif */
 }
 
+header img.KasaLogo {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
